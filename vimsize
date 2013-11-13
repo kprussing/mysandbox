@@ -1,0 +1,48 @@
+#!/bin/bash
+
+function usage() {
+    echo "Usage: vimsize [N] [H]"
+    echo ""
+    echo "Resize the terminal display to display [N] files in vim with"
+    echo "72 columns each.  This script uses the printf command with"
+    echo "ANSI escape sequences so it should be rather portable.  This"
+    echo "has only really been tested on OS X.  If the number of"
+    echo "characters overflows the screen, it appears that the terminal"
+    echo "is limited to the size of the screen."
+    echo ""
+    echo "    Keith Prussing 2013-11-01"
+    echo ""
+    echo "Optional arguments:"
+    echo "  -h              Display this help and quit"
+    echo "  N               Number of files to use (default 2)"
+    echo "  H               Number of rows to use (default full screen)"
+}
+
+# Check the number of inputs.
+if [[ $# -eq 0 ]]; then
+    N=2
+    H=0
+elif [[ $# -eq 1 ]]; then
+    N=$1
+    H=0
+elif [[ $# -eq 2 ]]; then
+    N=$1
+    H=$2
+else
+    echo "Too many inputs!"
+    N="-h"
+fi
+
+# Check for reasonable inputs.
+if [[ $N = '-h' ]]; then
+    usage
+    exit 0
+elif [[ $N =~ ^[^0-9]+$ || $H =~ ^[^0-9]+$ ]]; then
+    echo "Invalid argument!"
+    usage
+    exit 1
+fi
+
+ncol=$(($N * 78))
+printf "\e[8;$H;$ncol;t"
+
