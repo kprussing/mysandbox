@@ -1,0 +1,70 @@
+\documentclass[aps,prl,reprint]{revtex4-1}
+
+% You'll need my preamble from my dot files.
+\input{my_preamble}
+
+\begin{document}
+%--------1---------2---------3---------4---------5---------6---------7--
+% Header matter
+\title{My Working Notes}
+\author{Keith Prussing}
+\email{kprussing3@gatech.edu}
+\affiliation{
+    School of Physics \\
+    Georgia Institute of Technology, Atlanta, GA, 30332
+}
+\date{\today}
+
+\begin{abstract}
+    This is a place where I can keep all of my working notes together
+    for future use.  The use is primarily for myself, but anyone who
+    wants to could use these notes.  I highly doubt that any new
+    information is presented within; however, a novel perspective might
+    very well be contained herein.
+\end{abstract}
+\maketitle
+
+%--------1---------2---------3---------4---------5---------6---------7--
+\section{Boundary Element Method}
+In this section, I want to work out some details for the formulation of
+the boundary element method (BEM).  This will be a little sporadic so
+bear with me.
+
+\subsection{Green's Equations}
+In chapter 1 section 3 of~\cite{ang_beginners_2007}, he blows through a
+couple of math steps that I want to work out.  We take \(u\) and \(v\)
+to be solutions to the two dimensional Laplace equation
+\begin{align*}
+    \frac{\partial^2 u}{\partial x^2} + 
+    \frac{\partial^2 u}{\partial y^2} &= 0, \\
+    \frac{\partial^2 v}{\partial x^2} + 
+    \frac{\partial^2 v}{\partial y^2} &= 0. 
+\end{align*}
+Multiplying the first by \(v\) and the second \(u\) and subtracting we
+find
+\begin{align*}
+    v\frac{\partial^2 u}{\partial x^2} -
+    u\frac{\partial^2 v}{\partial x^2} +
+    v\frac{\partial^2 u}{\partial y^2} -
+    u\frac{\partial^2 v}{\partial y^2} = 0.
+\end{align*}
+And here is the step he glossed over.  Simply add and subtract
+\(\partial_x\,u\partial_xv\) to get
+\begin{align*}
+    v\frac{\partial^2 u}{\partial x^2} -
+    u\frac{\partial^2 v}{\partial x^2} +
+    \frac{\partial v}{\partial x}\frac{\partial u}{\partial x} -
+    \frac{\partial v}{\partial x}\frac{\partial u}{\partial x} &= 0 \\
+    \frac{\partial}{\partial x}\left( 
+        v\frac{\partial u}{\partial x} -u\frac{\partial v}{\partial x}
+    \right) &= 0
+\end{align*}
+using the product rule.  A similar process applies to the \(y\)
+derivative.  This is just one way to generate Green's functions by the
+looks of things.
+
+%--------1---------2---------3---------4---------5---------6---------7--
+% And the end matter.
+\bibliography{notes}
+\end{document}
+
