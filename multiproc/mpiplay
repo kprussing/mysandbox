@@ -1,0 +1,53 @@
+#!/usr/bin/env python
+__info__="""
+    Following along with Jeremy Bejarano's tutorial [1].
+
+    Keith Prussing 2013-12-20
+
+    [1] J. Bejarano (2012), URL 
+        jeremybejarano.zzl.org/MPIwithPython/index.html.
+
+"""
+import logging
+
+import mpi4py
+
+logging.getLogger(__file__).addHandler( logging.NullHandler() )
+logging.getLogger(__file__).setLevel( logging.DEBUG )
+
+def hello(comm):
+    "Simple hello program."
+    logger = logging.getLogger(__file__ +".hello")
+    rank = comm.Get_rank()
+    size = comm.Get_size()
+    if rank %2 == 0:
+        greeting = "Hello"
+    else:
+        greeting = "Goodbye"
+    # end if
+    msg = "{:s} world from process {:d} of {:d}!"
+    logger.info(msg.format(greeting, rank, size))
+    return
+# end def hello
+
+def musthave5(comm):
+    "Exercise 3 from introduction"
+    logger = logging.getLogger(__file__ +".musthave5")
+    if comm.Get_size() != 5:
+        logger.error("Program must run with 5 processes!")
+        comm.Abort()
+    # end if
+    logger.info("Success!")
+    return
+# end if
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.DEBUG)
+
+    from mpi4py import MPI
+    comm = MPI.COMM_WORLD
+
+    #hello(comm)
+    musthave5(comm)
+
+# end if

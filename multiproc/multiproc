@@ -10,6 +10,7 @@ __info__="""
 import argparse
 import logging
 import multiprocessing
+import os
 import random
 import sys
 import time
@@ -157,7 +158,8 @@ class MyClass:
         """
         logger = logging.getLogger(__file__ +".MyClass.new_get_block")
         t1 = time.time()
-        msg = "Computing {:d} of {:d} for ({:d},{:d})"
+        pid = " PID : {:d}".format(os.getpid())
+        msg = "Computing {:d} of {:d} for ({:d},{:d})" +pid
         for it in range(J):
             logger.debug(msg.format(it, J, I, J))
             time.sleep(random.randrange(len(self.matrix)))
