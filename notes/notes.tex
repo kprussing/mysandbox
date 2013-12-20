@@ -63,6 +63,131 @@ using the product rule.  A similar process applies to the \(y\)
 derivative.  This is just one way to generate Green's functions by the
 looks of things.
 
+\subsection{Laplace's Equation}
+Okay, so I missed something along the way.  Let me back up and take a
+look at deriving the equations in my own notation.  We wish to find a
+solution to Laplace's equation in a region \(\Gamma\) bounded by the
+surface \(S\).  We assume that either the value or the normal
+derivative, but not both, of the field is specified on \(S\) at all
+points.  We seek a solution to Laplace's equation that satisfies the
+boundary conditions.  Our first task will be to formulate an integral
+equation, and then we shall introduce an expansion set to convert to a
+matrix formulation.
+
+We begin our investigation in the 2D case.  In two dimensions, the
+Laplace operator becomes
+\begin{align*}
+    \div\grad u(x,y) &= \frac{\partial^2 u}{\partial x^2}
+    +\frac{\partial^2 u}{\partial y^2} \\
+    \div\grad u(\rho,\theta) &= \frac{1}{\rho}
+    \frac{\partial}{\partial\rho} 
+    \left( \rho\frac{\partial u}{\partial\rho} \right)
+    +\frac{1}{\rho^2}\frac{\partial^2 u}{\partial\theta^2}.
+\end{align*}
+The next part loosely follows the Wikipedia page on Green's identities,
+but I know I've seen it in common texts in the literature.  I just don't
+have any handy at the moment.  Now we take the divergence theorem
+\begin{equation*}
+    \int_\Gamma \div\svec{F}\,dV = \oint_S \unitvec{n}\cdot\svec{F}\,dS
+\end{equation*}
+with the vector field \(\svec{F} = u\div v -v\div u\) to find
+\begin{equation*}
+    \int_\Gamma u\div\grad v -v\div\grad u \, dV =
+    \oint_S
+    u\frac{\partial v}{\partial n} -v\frac{\partial u}{\partial n}
+    \,dS.
+\end{equation*}
+This becomes the starting point for the three dimensional case.  In the
+case of two dimensions, \(u\) and \(v\) have no functional dependence on
+\(z\) and the Laplace operator is as defined above.  We may remove the
+integration over \(z\) by simply inserting the Dirac delta function
+\(\delta(z)\) and integrating.  Thus the equation of interest in two
+dimensions is 
+\begin{equation*}
+    \int_\Gamma u\div\grad v -v\div\grad u \, dA =
+    \oint_S
+    u\frac{\partial v}{\partial n} -v\frac{\partial u}{\partial n}
+    \,dS.
+\end{equation*}
+Boy that was pointless.  The equation looks the same.  I sure hope the
+derivation of the Green's function is more interesting.
+
+Next, we introduce the function \(g(\svec{x},\svec{x}')\) that is a
+solution to the Poisson equation
+\begin{equation*}
+    \div\grad g(\svec{x},\svec{x}') = -\delta(\svec{x}-\svec{x}').
+\end{equation*}
+I know that Rother had a good description of this part for the Helmholtz
+equation~\cite{rother_electromagnetic_2009}.  Plugging this into Green's
+second identity above and taking \(u\) to satisfy Laplace's equation we
+find
+\begin{equation*}
+    u(\svec{x}) = \oint_S \left[
+        g(\svec{r},\svec{x})\grad[\svec{r}] u(\svec{r})
+        -u(\svec{r})\grad[\svec{r}] g(\svec{r},\svec{x})
+    \right] \cdot \unitvec{n} \, dS(\svec{r})
+\end{equation*}
+I should really use some equation labels.  In two dimensions, this will
+simply reduce to the integral around the contour bounding the region
+\(\Gamma\).  Note, that this is for a point \(\svec{x}\) that lies with
+in the region \(\Gamma\).  The function \(u\) is not defined external to
+this region.  But what happens, when \(\svec{x}\) lies on the surface
+\(S\)?  Rodriguez and company state that there is a \(1/2\) but they
+don't derive it~\cite{rodriguez_fluctuating-surface-current_2013}, Ang
+derives it in 2D in what I can see~\cite{ang_beginners_2007}.  I guess I
+should sketch out the proof.
+
+Here we go!  Due to the singularity when \(\svec{x}\) lies on the
+surface \(S\), we must interpret the surface integral as a principle
+value~\cite{ang_beginners_2007}.  If we surround the point \(\svec{x}\)
+by a circle of radius \(\eps\) and exclude this region from surface
+integral, we know would get \(0\).  By letting \(\eps\) tend toward
+zero, we would get the original form.  So, we need to evaluate an
+integral of the form
+\begin{equation*}
+    \lim_{\eps\to0}
+\end{equation*}
+I need to look at some more formalisms.  In principle, if we exclude a
+region of "radius" \(\eps\) from the surface integral we could then let
+\(\eps\) tend toward \(0\).  This would then see a locally flat region
+of \(S\) was smooth.  I'm not completely sure how to get that region to
+essentially have a factor of \(-1/2\).  I should look into the
+references in~\cite{rodriguez_fluctuating-surface-current_2013}.
+
+Now, what is the Green's function in two dimensions?  First, we Fourier
+transform the differential equation to the frequency domain
+\begin{align*}
+    \int_{\mathbb{R}_n} \div\grad g(\svec{r})
+    e^{-i \svec{k}\cdot\svec{r}} d^nr &= -\int_{\mathbb{R}_n}
+    \delta(\svec{r}) e^{-i\svec{k}\cdot\svec{r}} d^nr \\
+    k^2 \tilde{g}(\svec{r}) &= -1 \\
+    g(\svec{r}) &= \frac{-1}{(2\pi)^n} \int_{\mathbb{R}_n}
+    \frac{e^{i\svec{k}\cdot\svec{r}}}{k^2} \, d^nk
+\end{align*}
+Now to derive the Green's function in various dimensions.
+
+First, we start with \(n=3\).  This gives us
+\begin{align*}
+    g(\svec{r}) &= \frac{-1}{(2\pi)^3} \int_0^{2\pi}d\phi_k
+    \int_0^\infty \int_{-1}^1 \frac{e^{ikru}}{k^2} \,du \,k^2 dk \\
+    &= \frac{i}{(2\pi)^2r}
+    \int_0^\infty \frac{e^{ikr} -e^{-ikr}}{k} \,dk \\
+    &= \frac{i}{(2\pi)^2r} \int_{-\infty}^\infty \frac{e^{ikr}}{k} \,dk
+\end{align*}
+where the last step follow from separating at the subtraction,
+substituting \(k' \to -k\), swapping the limits of integration,
+substituting \(k \to k'\), and adding the integrals.  To perform the
+integral, we project onto the complex plane and use the residue
+theorem.  We subtract a small negative imaginary part to the denominator
+and allow it to approach zero.  We close the contour in the upper half
+plane where \(z\) has a large imaginary part so that the integrand goes
+to zero.  Thus we find
+\begin{align*}
+    2\pi i \lim_{\eps\to0} e^{ikr} \Big\rvert_{k=0} &= \lim_{\eps\to0}
+    \oint \frac{e^{izr}}{z-i\eps} \,dz \\
+    2\pi i&= \int_{-\infty}^\infty \frac{e^{ikr}}{k} \,dk.
+\end{align*}
+
 %--------1---------2---------3---------4---------5---------6---------7--
 % And the end matter.
 \bibliography{notes}
