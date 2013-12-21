@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 __info__="""
-    Following along with Jeremy Bejarano's tutorial [1].
+    Following along with Jeremy Bejarano's tutorial [1].  This is simply
+    me working through all of the exercises and adding my comments.
+    This would probably make more sense if you are looking at what I did
+    of if I had done it as a IPython notebook.  Although, now that I
+    think about it, that probably wouldn't have worked.  Regardless!
+    this is what I did and I didn't document the discussion portions
+    until the Collective Communications section.  Have fun.
 
     Keith Prussing 2013-12-20
 
@@ -8,14 +14,16 @@ __info__="""
         jeremybejarano.zzl.org/MPIwithPython/index.html.
 
 """
+import argparse
 import logging
 
 import mpi4py
+import numpy
 
 logging.getLogger(__file__).addHandler( logging.NullHandler() )
 logging.getLogger(__file__).setLevel( logging.DEBUG )
 
-def hello(comm):
+def hello(comm, args):
     "Simple hello program."
     logger = logging.getLogger(__file__ +".hello")
     rank = comm.Get_rank()
@@ -30,7 +38,7 @@ def hello(comm):
     return
 # end def hello
 
-def musthave5(comm):
+def musthave5(comm, args):
     "Exercise 3 from introduction"
     logger = logging.getLogger(__file__ +".musthave5")
     if comm.Get_size() != 5:
@@ -41,13 +49,406 @@ def musthave5(comm):
     return
 # end if
 
+def pass_random_draw(comm, args):
+    "Draw a random number and pass it to another process."
+    logger = logging.getLogger(__file__ +".pass_random_draw")
+    N = args.N
+    rank = comm.Get_rank()
+    rand = numpy.zeros((N,))
+    if comm.Get_size() < 2:
+        logger.error("Program needs a minimum of 2 processes!")
+        comm.Abort()
+    # end if
+    if rank == 1:
+        rand = numpy.random.random_sample(N)
+        msg = "Process {:d} drew {:s}".format(rank, str(rand))
+        logger.info(msg)
+        comm.Send(rand, dest=0)
+    elif rank == 0:
+        msg = "Process {:d} initially has numbers {:s}"
+        logger.info(msg.format(rank, str(rand[0])))
+        comm.Recv(rand, source=1)
+        msg = "Process {:d} received {:s}".format(rank, str(rand))
+        logger.info(msg)
+    else:
+        logger.warning("Unused process {:d}".format(rank))
+    # end if
+    return
+# end def pass_random_draw
+
+def pass_random_ring(comm, args):
+    """
+    Pass random values around a ring of processes.  This is exercise 3
+    from the Point-to Point Communication section.
+    """
+    logger = logging.getLogger(__file__ +".pass_random_ring")
+    rank = comm.Get_rank()
+    size = comm.Get_size()
+    rand = numpy.zeros((1,))
+    rand = numpy.random.random_sample(1)
+    logger.info("Process {:d} drew {:f}".format(rank, rand[0]))
+    if rank == size -1:
+        comm.Send(rand, dest=0)
+    else:
+        comm.Send(rand, dest=rank+1)
+    # end if
+    if rank == 0:
+        comm.Recv(rand, source=size-1)
+    else:
+        comm.Recv(rand, source=rank-1)
+    # end if
+    logger.info("Process {:d} received {:f}".format(rank, rand[0]))
+    return
+# end def pass_random_ring
+
+def trap(comm, args):
+    """
+    Use the trapezoidal rule to integrate a function.  This is based on
+    the Point-to-Point Communication section.
+    """
+    logger = logging.getLogger(__file__ +".integrate")
+
+    # Define the trapezoidal rule.
+    def integrate(F, A, B, N):
+        """
+        Use the trapezoidal rule to compute the integral of F from A to
+        B using N intervals.
+        """
+        x = numpy.linspace(A, B, N+1)
+        y = F(x)
+        return numpy.sum((x[1:] -x[:-1]) *(y[1:] +y[:-1])) /2.0
+    # end def
+    def integrate_bad(F, A, B, N):
+        """
+        Implement the trapezoid rule without vectorization.  The only
+        reason to not use the above method is to make this slow.
+        """
+        I = -(F(A) +F(B)) /2.0
+        for x in numpy.linspace(A,B,N+1):
+            I += F(x)
+        # end for
+        return I *(B -A) /N
+    # end def integrate_bad
+
+    # An arbitrary function.
+    def F(x):
+        return x*x
+    # end def F
+
+    rank = comm.Get_rank()
+    size = comm.Get_size()
+
+    # Get the base step size.
+    dx = (args.B -args.A) /args.N
+    lN, rem = divmod(args.N, size)
+    lA = args.A +rank *lN *dx
+    #----1---------2---------3---------4---------5---------6---------7--
+    # Exercise 4 in Point-to-Point Communication
+    if rank < rem:
+        # All processes with rank less than the remainder computes an
+        # extra block.  Don't forget to add each off set up to the
+        # current rank.
+        lN += 1
+        lA += rank *dx
+    else:
+        # Correct all intervals that did not get additional blocks with
+        # the total number of subsections added.
+        lA += rem *dx
+    # end if
+    #----1---------2---------3---------4---------5---------6---------7--
+    lB = lA +lN *dx
+
+    msg = "Process {:d} computing {:d} blocks from {:f} to {:f}"
+    logger.debug(msg.format(rank, lN, lA, lB))
+
+    # Apparently we must send and receive using NumPy objects.
+    I     = numpy.zeros((1,))
+    I[0]  = integrate_bad(F, lA, lB, lN)
+    buff  = numpy.zeros((1,))
+    total = numpy.zeros((1,))
+
+    #----1---------2---------3---------4---------5---------6---------7--
+    # Used in Point-to-Point Communication
+    #if rank == 0:
+        ## Root captures all of the data.
+        #total[0] = I[0]
+        #for it in range(1, size):
+            #comm.Recv(buff, MPI.ANY_SOURCE)
+            #total[0] += buff[0]
+        ## end for
+    #else:
+        ## Everyone else, sends.
+        #comm.Send(I)
+    ## end if
+    #----1---------2---------3---------4---------5---------6---------7--
+    # Update for Collective Communication
+    comm.Reduce(I, total, op=MPI.SUM, root=0)
+    #----1---------2---------3---------4---------5---------6---------7--
+
+    msg = "With N={:d} trapezoids, our estimate of the integral " \
+        +"from {:f} to {:f} is {:f}"
+    if rank == 0:
+        # Root reports.
+        logger.info(msg.format(args.N, args.A, args.B, total))
+    # end if
+
+    return
+# end def trap
+
+def dot(comm, args):
+    "Dot method from Collective Communication"
+    logger = logging.getLogger(__file__ +".dot")
+    rank = comm.Get_rank()
+    size = comm.Get_size()
+
+    # Arbitrary vector generated here.
+    if rank == 0:
+        X = numpy.linspace( 0, 100, args.N)
+        Y = numpy.linspace(20, 300, args.N)
+    else:
+        X = None
+        Y = None
+    # end if
+
+    dt = numpy.zeros((1,))
+    lN = numpy.zeros((size,), dtype=int)
+    st = numpy.zeros((size,), dtype=int)
+    if rank == 0:
+        if not args.N == X.size:
+            logger.error("Vector X size mismatch!")
+            comm.Abort()
+        elif not args.N == Y.size:
+            logger.error("Vector Y size mismatch!")
+            comm.Abort()
+        # end if
+
+        #1---------2---------3---------4---------5---------6---------7--
+        # Initial implementation requires even divisibility.
+        #if not args.N % size == 0:
+            #logger.error("Number of process must divide N!")
+            #comm.Abort()
+        ## end if
+        ## The length of each portions section.
+        #lN[0] = args.N /size
+        #1---------2---------3---------4---------5---------6---------7--
+    # end if
+    # Exercise 3 converts to arbitrary.  It needs to be done on all
+    # process to determine the size of the local array.
+    lN[:], rem = divmod(args.N, size)
+    # Add one to all elements up to the number of remainders.
+    lN[:rem] += 1
+    # The start point is the sum of all regions before the current rank.
+    st[1:] = numpy.cumsum(lN[:-1])
+    #----1---------2---------3---------4---------5---------6---------7--
+
+    # Initialize local arrays
+    msg = "Process {:d} gets {:d} elements starting at {:d}"
+    logger.debug(msg.format(rank, lN[rank], st[rank]))
+    lX = numpy.zeros(lN[rank])
+    lY = numpy.zeros(lN[rank])
+
+    #----1---------2---------3---------4---------5---------6---------7--
+    # Communicate the local array size to each process (Initial)
+    #comm.Bcast(lN, root=0)
+    # Segment the vector(Initial)
+    #comm.Scatter(X, lX, root=0)
+    #comm.Scatter(Y, lY, root=0)
+    #----1---------2---------3---------4---------5---------6---------7--
+    # Exercise 3
+    comm.Scatterv([X, tuple(lN), tuple(st), MPI.DOUBLE], lX, root=0)
+    comm.Scatterv([Y, tuple(lN), tuple(st), MPI.DOUBLE], lY, root=0)
+    #----1---------2---------3---------4---------5---------6---------7--
+
+    # Perform the local computation
+    ldot = numpy.array( [numpy.dot(lX, lY)] )
+
+    # Sum the results.
+    if args.method == "dot":
+        ldot = numpy.array( [numpy.dot(lX, lY)] )
+        comm.Reduce(ldot, dt, op=MPI.SUM)
+    elif args.method == "max":
+        ldot = numpy.array( [max(lX.max(), lY.max())] )
+        comm.Reduce(ldot, dt, op=MPI.MAX)
+    else:
+        msg = "This should never happen (unless you did silly things)"
+        logger.error(msg)
+        comm.Abort()
+    # end if
+
+    if rank == 0:
+        msg = args.method +" computed parallel is " \
+            +"{:f} and serial is {:f}"
+        if args.method == "dot":
+            val = numpy.dot(X,Y)
+        elif args.method == "max":
+            val = max( X.max(), Y.max() )
+        # end if
+        logger.info(msg.format(dt[0], val))
+    # end if
+
+    return
+# end def dot
+
+def Adotb(comm, args):
+    """
+    Compute a matrix-vector product for exercise 5 on Collective
+    Communication.
+    """
+    logger = logging.getLogger(__file__ +"Adotb")
+    rank = comm.Get_rank()
+    size = comm.Get_size()
+
+    # Generate arbitrary arrays.
+    if rank == 0:
+        A = numpy.random.random_integers(0, 9, (size,size)).transpose()
+        b = numpy.random.random_integers(0, 9, (size,))
+    else:
+        A = numpy.array((1,))
+        b = None
+    # end if
+    lA = numpy.zeros((size,), dtype=int)
+    lb = numpy.zeros((1,), dtype=int)
+
+    # Scatter the data
+    comm.Scatter(A, lA, root=0)
+    comm.Scatter(b, lb, root=0)
+
+    # Multiply.
+    msg = "Process {:d}: {:s} *{:s} = ".format(rank, str(lA), str(lb))
+    lA *= lb[0]
+    logger.debug(msg +"{:s}".format(str(lA)))
+
+    # And reduce.
+    x = numpy.zeros((size,), dtype=int)
+    comm.Reduce(lA, x, MPI.SUM, root=0)
+
+    if rank == 0:
+        msg = "{:s} *{:s} = {:s}".format(A, b, x)
+        logger.info(msg)
+    # end if
+
+    return
+# end def Adotb
+
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.DEBUG)
+
+    parser = argparse.ArgumentParser( \
+            description=__info__, \
+            formatter_class=argparse.RawDescriptionHelpFormatter \
+        )
+    parser.add_argument( \
+            "-v", "--verbose", help="Be noisy", action="store_true" \
+        )
+    subparsers = parser.add_subparsers( \
+            description="Select the program to run" \
+        )
+
+    # hello
+    sparse = subparsers.add_parser("hello", description="Say hello")
+    sparse.set_defaults(func=hello)
+
+    # Must have 5
+    sparse = subparsers.add_parser( \
+            "have5", description="Demand 5 processes" \
+        )
+    sparse.set_defaults(func=musthave5)
+
+    # Draw a random number.
+    sparse = subparsers.add_parser( \
+            "rand", description="Pass an array of random numbers" \
+        )
+    sparse.add_argument("N", help="Length of the array", type=int)
+    sparse.set_defaults(func=pass_random_draw)
+
+    # Pass random numbers around a ring.
+    sparse = subparsers.add_parser( \
+            "rring", description="Pass randoms around a ring" \
+        )
+    sparse.set_defaults(func=pass_random_ring)
+
+    # Trapezoidal method
+    sparse = subparsers.add_parser( \
+            "trap", description="Integrate X**2 from A to B" \
+        )
+    sparse.add_argument("A", help="Start", type=float)
+    sparse.add_argument("B", help="End",   type=float)
+    sparse.add_argument("N", help="Number of intervals", type=int)
+    sparse.set_defaults(func=trap)
+
+    # Dot product
+    sparse = subparsers.add_parser( \
+            "dot", description="Compute the dot product" \
+        )
+    sparse.add_argument("N", help="Array length", type=int)
+    sparse.set_defaults(method="dot")
+    sparse.set_defaults(func=dot)
+
+    # Hack for exercise 4 of Collective Communication
+    sparse = subparsers.add_parser( \
+            "max", description="Compute the max value" \
+        )
+    sparse.add_argument("N", help="Array length", type=int)
+    sparse.set_defaults(method="max")
+    sparse.set_defaults(func=dot)
+
+    sparse = subparsers.add_parser( \
+            "Adotb", description="Compute matrix product" \
+        )
+    sparse.set_defaults(func=Adotb)
 
     from mpi4py import MPI
     comm = MPI.COMM_WORLD
 
-    #hello(comm)
-    musthave5(comm)
+    args = parser.parse_args()
+    if args.verbose:
+        logging.basicConfig(level=logging.DEBUG)
+    else:
+        logging.basicConfig(level=logging.INFO)
+    # end if
+    args.func(comm, args)
 
 # end if
+
+#--------1---------2---------3---------4---------5---------6---------7--
+# Collective Communication
+#--------1---------2---------3---------4---------5---------6---------7--
+# 1.    Both Reduce and Allreduce block until all processes have
+# provided information and the desired operation (defaulting to
+# summation) has been performed.  In the case of Reduce, the result is
+# only guaranteed on the specified process (defaults to 0).  Allreduce
+# places the result in all processes.
+#
+# 2.    Reduce followed by Bcast will distribute the computed answer
+# across all processes just as Allreduce.  However, in the first case,
+# processes will remain idle while the Reduce is performed and then a
+# second passing of data must happen.  With Allreduce, the idle time is
+# lowered and there is one less call to pass information.
+#
+# 5.    Scattering the matrix across the processes places one row of the
+# matrix in each.  If we were to use Bcast, we would then be copying the
+# entire vector to each process, compute the full dot product, and use
+# gather to place the result in the proper location.  If we were to use
+# Scatter, each process would get a single element of the vector.  This
+# means we would have to scatter the transpose of the matrix.  We would
+# then multiply the column in the process by the scalar element from the
+# vector.  We would then simply sum all of the vectors from the
+# individual processes using Reduce.  By using a scalar and a vector,
+# the second method will be move efficient.
+#
+# Note: Watch for type matching.  Attempting to scatter an integer array
+# into floating point local arrays causes problems.  In the example at
+# the bottom of the page, if you omit the decimal point and do not
+# declare the type of local_a as int, you get wrong values.
+#
+#    rank = comm.Get_rank()
+#    A = numpy.array([ [1,2,3],[4,5,6],[7,8,9] ])
+#    lA = numpy.zeros((3,), dtype=int)
+#    comm.Scatter(A,lA)
+#    red = numpy.zeros((3,), dtype=int)
+#    comm.Reduce(lA, red, MPI.SUM, root=0)
+#    print("Process {:d} has {:s}".format(rank, str(lA)))
+#    if rank == 0:
+#        print("Sum of columns is {:s}".format(str(red)))
+#    # end if
+#--------1---------2---------3---------4---------5---------6---------7--
+
