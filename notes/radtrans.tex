@@ -60,3 +60,21 @@ the quick and dirty script.  It only matches the catalog to 2
 significant figures~\cite{howell_catalog_2010}.  This leads us back to
 scale invariance and vector sweep.
 
+I also want to find the reference Ken was using.  I'm not sure if
+Spencer was also using that reference, but I'll never know.  Spencer was
+terrible about writing things down.  I know he use \textsc{pbrt}, but
+that's all I know.  According to Wikipedia, the geometric view factor
+between differential areas is
+\begin{equation}
+    F_{1\to2} = \frac{\cos\theta_1\cos\theta_2}{\pi S^2} dA_2.
+\end{equation}
+This is not very symmetric, but it probably is due to the reciprocity
+relation \(A_1F_{1\to2} = A_2F_{2\to1}\).  The angles are those between
+the normal vector for the surface patch and the vector connecting the
+two center points \(\svec{S}\) and \(S\) is the distance between the two
+\(S = \lVert\svec{S}\rVert\).  This is all well and good and I remember
+this.  I need to dig around in how scaling the differential area
+\(dA_2\) works.  Obviously, the separation is easily scaled \(S' = R S\)
+where \(R\) is simply a desired ``scaling'' factor.  I use \(R\) because
+I know I'll want to use the radius.
+
