@@ -78,3 +78,15 @@ this.  I need to dig around in how scaling the differential area
 where \(R\) is simply a desired ``scaling'' factor.  I use \(R\) because
 I know I'll want to use the radius.
 
+The differential patch is defined as [need source]
+\begin{equation}
+    dA \equiv \left\lVert \frac{\partial\svec{r}}{\partial u} \times
+    \frac{\partial\svec{r}}{\partial v} \right \rVert.
+\end{equation}
+So, if we select \(u\) and \(v\) such that they are dimensionless, the
+we \emph{should} be able to simply scale the position vector
+\(\svec{r}\) by the same scaling factor \(\svec{r}' = R \svec{r}\).
+I'll have to be cautious about this.  We might have to work with the
+factor \(A_1F_{1\to2}\) to ensure the scaling works.  But that has units
+of area so I'm not sure haw that would really work\ldots
+
