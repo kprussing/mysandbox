@@ -12,6 +12,76 @@ was].  I should really go take a look at those notes I made about all of
 this a few years back.  They are on my desktop at work and the text
 files are on Ursa.
 
+\subsection{Previous Work Discussion}
+The general means to compute the radiative transfer between two surfaces
+has been studied extensively over the past half century.  The assumption
+is made that all surfaces are diffuse grey body reflectors and that
+Kirchoff's law holds at all wavelengths.  The energy exchange is
+governed by the black-body exchange along with a factor representing the
+relative exchange between the two bodies
+\begin{equation}
+    H_{ij} = \sigma(T_i^4 -T_j^4) A_i\mathcal{F}_{ij}.
+\end{equation}
+The challenge of the work is to determine how much energy leaving \(i\)
+is absorbed by \(j\).  
+
+If all surfaces are black, then the energy leaving \(i\) that is
+incident on \(j\) is absorbed.  Because the energy travels in a straight
+line, the relative about of are of \(i\) that can be ``seen'' by \(j\)
+is our factor \(A_iF_{ij}\).  This factor \(F_{ij}\) is referred to in
+the literature as the view factor~\cite{clark_algebraic_1974,
+hottel_radiative_1967}, the angle factor~\cite{hottel_radiative_1967,
+sparrow_new_1963}, and the configuration
+factor~\cite{eichberger_calculation_1985}.  When the bodies are grey, a
+first approximation to account for emissivities other than unity is to
+multiply by the emissivity of each surface
+\(F_{ij}\Rightarrow\epsilon_i\epsilon_j
+F_{ij}\)~\cite{eichberger_calculation_1985}.  While this is an
+improvement, it does not account for multiple reflections.
+
+To work around this problem, Hottel and Sarofim used a ``total view
+factor'' \(\mathcal{F}_{ij}\) and the equivalent total exchange area
+\(\overline{S_iS_j} = A_i\mathcal{F}_{ij} =
+A_j\mathcal{F}_{ji}\)~\cite{hottel_radiative_1967}, and Gebhart used an
+absorption coefficient \(B_{ij}\)~\cite{gebhart_surface_1961}.  While
+numerically different, the base philosophy of both are the same.  Each
+factor encompasses the entire energy emitted by \(i\) and absorbed by
+\(j\).  This includes energy reflected by other surfaces in the
+configuration, multiple reflections, or any other path one may consider.
+Clark and Korybalski demonstrated the formal equivalence of both the
+total view factor and the absorption coefficient and that both are
+related to the geometric view factors~\cite{clark_algebraic_1974}.
+
+One bottleneck is that the total view factors require the computation of
+the geometric view factors first.  We must then solve \(N\) systems of
+\(N\) equations.  We may see this by considering the fact that in order
+to trace energy from one surface through all reflections in the
+configuration, we must visit every surface.  The Southwell relaxation
+method beautifully illustrates this~\cite{cohen_radiosity_1993}.  The
+surface with the highest energy ``shoots'' its excess into the scene.
+The energy is distributed across all surfaces according to the geometric
+view factor.  The energy at each surface is adjusted according to the
+absorptivity and the reflected energy is is queued up to be ``shot'' as
+excess.  The procedure it repeated with each highest energy surface
+until an equilibrium is reached and there is no energy remaining to
+``shoot'' without breaking physical laws.  This is simply tracing the
+energy through the scene in the same philosophy as the total view
+factors and the absorption coefficients.
+
+The second bottle neck is the computation of the view factors.  There
+exist semi-analytic methods for axially symmetric non-occluded
+cases~\cite{chung_simpler_1982, naraghi_radiation_1982,
+chung_formulation_1984}, and there are catalogs of various non-occluded
+cases~\cite{howell_catalog_2010}; however, these are for limited
+configurations or provide limited precision.  Most numerical methods to
+compute the view factors are over a quarter of a century old.  Recently,
+Walton presented a new program using an adaptive meshing
+algorithm~\cite{walton_calculation_2002}.  We know the view factor is
+related to the solid angle~\cite{sparrow_new_1963}, so we could employ a
+Monte Carlo approach similar to Whitcher~\cite{whitcher_monte_2012}, but
+this would still require ray tracing to check for occlusions.
+
+\subsection{Random Babbling About Stuff}
 We know the total exchange factors for a system are dependent on the
 geometric view factors \(F_{1,2}\) and the emissivity of the objects.
 Once those are know, the total exchange factors are found by solving the
