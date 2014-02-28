@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+import os
+
+env = Environment(ENV=os.environ)
+main = env.PDF("notes.pdf", "notes.tex")
+Default(main)
+Alias("notes", main)
+

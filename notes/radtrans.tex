@@ -1,0 +1,62 @@
+\section{Radiative Transport}
+In this section, we will discuss some musings about the general
+properties of the radiative transport between grey bodies.  We assume
+that all reflections are diffuse.  This implies that for any two bodies
+at finite temperatures, the energy exchange between them is 
+\begin{equation}
+    H_{1,2} = \sigma A_1\mathcal{F}_{1,2} \left(T_1^4 -T_2^4\right).
+\end{equation}
+In the above, \(A_1\mathcal{F}_{1,2}\) is the total exchange factor 
+described by Hottel and Sarofim [I need to figure out which book that
+was].  I should really go take a look at those notes I made about all of
+this a few years back.  They are on my desktop at work and the text
+files are on Ursa.
+
+We know the total exchange factors for a system are dependent on the
+geometric view factors \(F_{1,2}\) and the emissivity of the objects.
+Once those are know, the total exchange factors are found by solving the
+\(N\) systems of equations where \(N\) is the number of ``nodes'' in the
+system.  I say ``nodes'' because Ken and I had a huge argument about
+using the word ``nodes'' unqualified.  In the current context, I am
+referring to a ``thermal node'' concept; however, that is not very
+precise. 
+
+Because the total exchange factor \(A_i\mathcal{F}_{i,j}\) capture all
+of the multiple reflections, this will give the proper black-body
+exchange.  I plotted the exchange normalized by the geometric view
+factor \(F_{1,2}\) and saw that the oblate spheroid still displayed an
+increase of \(\sim\)80\% while the prolate decrease \(\sim\)40\%.  These
+numbers are just off the top of my head and are not precise.  If we
+consider the fact that the oblate spheroid has a much larger geometric
+view factor, we expect this.  But, because the local normal of an oblate
+spheroid is closer to that of a plane, more of the energy can
+participate in multiple reflections compared to a sphere or a prolate
+spheroid.  This also explains why the sphere-sphere plot was still very
+high as opposed to a little high.  Of course, it could simply be that
+the near-field effects are huge like everyone says.  This means we do
+need to get the total exchange factors and not just the geometric.  This
+sounds like a job for vector sweep, but it probably doesn't want to work
+with the small length scales (\textsc{F10.4} list directed
+\textsc{fortran77} or something like that).  If we can establish that
+the exchange factors are scale invariant, we may be able to work with
+this.
+
+We may just have to rewrite a program to compute these things.  There
+are ``recent'' programs developed to do
+this~\cite{walton_calculation_2002}, but I haven't gotten around to
+grabbing the source code yet.  A brute force method would be to use a
+Monte Carlo approach similar to Whitcher's solid angle
+approach~\cite{whitcher_monte_2012}, but we know that is an \(O(N^3)\)
+approach~\cite{walton_calculation_2002}.  We could use catalogs for the
+well documented geometric view factors~\cite{howell_catalog_2010}, but
+that will give us limited precision.  Chung and Naraghi have presented
+method on computing the geometric view factor for axially symmetric
+cases~\cite{chung_simpler_1982, naraghi_radiation_1982,
+chung_formulation_1984}, but that is still the geometric factor.  In our
+case, we are only considering two surfaces, so that might not be a
+terrible thing once we can establish the emissivity of gold.  I'm still
+not sure that we are getting the correct geometric view factor out of
+the quick and dirty script.  It only matches the catalog to 2
+significant figures~\cite{howell_catalog_2010}.  This leads us back to
+scale invariance and vector sweep.
+
