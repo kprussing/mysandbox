@@ -32,7 +32,25 @@ is our factor \(A_iF_{ij}\).  This factor \(F_{ij}\) is referred to in
 the literature as the view factor~\cite{clark_algebraic_1974,
 hottel_radiative_1967}, the angle factor~\cite{hottel_radiative_1967,
 sparrow_new_1963}, and the configuration
-factor~\cite{eichberger_calculation_1985}.  When the bodies are grey, a
+factor~\cite{eichberger_calculation_1985}.  This factor is derived from
+the differential amount of energy emitted by area element \(dA_i\) that
+is incident on element \(dA_j\)~\cite{sparrow_new_1963}
+\begin{equation}
+    dF_{dA_i\to dA_j} = \frac{\cos\theta_i\cos\theta_j}{\pi r^2} dA_j.
+\end{equation}
+The total energy emitted by a finite surface incident on a finite
+surface \(A_j\) is obtained by integrating over the surface
+\begin{equation}
+    F_{dA_i\to A_j} = \iint_{A_j} \frac{\cos\theta_i\cos\theta_j}{\pi
+    r^2} \, dA_j,
+\end{equation}
+and the total energy exchanged between finite surfaces in is obtained by
+a double surface integral~\cite{sparrow_new_1963}
+\begin{equation}
+    F_{A_i\to A_j} = \frac{A_i}\iint_{A_i}\iint_{A_j} 
+    \frac{\cos\theta_i\cos\theta_j}{\pi r^2} \, dA_j dA_i
+\end{equation}
+When the bodies are grey, a
 first approximation to account for emissivities other than unity is to
 multiply by the emissivity of each surface
 \(F_{ij}\Rightarrow\epsilon_i\epsilon_j
@@ -81,6 +99,66 @@ related to the solid angle~\cite{sparrow_new_1963}, so we could employ a
 Monte Carlo approach similar to Whitcher~\cite{whitcher_monte_2012}, but
 this would still require ray tracing to check for occlusions.
 
+\subsection{Scale Invariance of View Factors}
+Consider the exchange between two surfaces \(A_i\) and \(A_j\).  We know
+the view factor is defined by
+\begin{equation}
+    A_iF_{ij} = \iint_{A_i}\iint_{A_j} 
+    \frac{\cos\theta_i\cos\theta_j}{\pi r_{ij}^2}
+    \,dA_jdA_i.
+\end{equation}
+The differential surface area is given by~\cite{tai_generalized_1997}
+\begin{equation}
+    dA = \left\lVert \frac{\partial \svec{r}}{\partial u} \times
+    \frac{\partial\svec{r}}{\partial v} \right\rVert_{\svec{r}\in A}
+    \,dudv.
+\end{equation}
+Now let us multiply all length scales by a common factor \(R\).  This
+could simply be a unit conversion (eg. \SI{1}{\metre} =
+\SI{1000}{\milli\metre}).  This means \(\svec{r}' = R\svec{r}\), \(x' =
+Rx\), \(y' = Ry\), and \(z' = Rz\).  If \(u\) or \(v\) has dimensions of
+length, we immediately see that the scaling factor will cancel in the
+definition of the differential area 
+\begin{equation}
+    \frac{\partial\svec{r}'}{\partial u'}du' =
+    R\frac{\partial\svec{r}}{\partial (Ru)} d(Ru) =
+    R\frac{\partial\svec{r}}{\partial u} du.
+\end{equation}
+This makes the scaled differential area
+\begin{align}
+    dA' &= \left\lVert \frac{\partial \svec{r}'}{\partial u} \times
+    \frac{\partial\svec{r}'}{\partial v} \right\rVert_{\svec{r}'\in A'}
+    \,dudv 
+    \nonumber \\
+    &= R^2 \left\lVert \frac{\partial \svec{r}}{\partial u} \times
+    \frac{\partial\svec{r}}{\partial v} \right\rVert_{\svec{r}'\in A'}
+    \,dudv 
+    \nonumber \\
+    &= R^2 dA.
+\end{align}
+Substituting this into the definition of the view factor we find
+\begin{equation}
+    F_{ij} = \frac{1}{R^2A_i} \iint_{A_i'} \iint_{A_j'}
+    \frac{\cos\theta_i\cos\theta_j}{\pi (Rr_{ij})^2} \,dA_j'dA_i',
+\end{equation}
+but \(r_{ij}' = Rr_{ij}\) and the two length scales in the surface
+\(A_i\) are scaled so that \(A_i' = R^2A_i\) so 
+\begin{equation}
+    F_{ij} = \frac{1}{A_i'} \iint_{A_i'} \iint_{A_j'}
+    \frac{\cos\theta_i\cos\theta_j}{\pi (r_{ij}')^2} \,dA_j'dA_i'.
+\end{equation}
+This means the geometric view factor is unchanged by a simple scaling of
+all lengths.  In other words, the geometric view factor is the same
+regardless of the system of units used to measure the areas.
+
+It is intuitively obvious that the view factor should be scale
+invariant.  I can increase the size of both objects by a common factor
+which would increase the relative amount that each ``sees'' of the
+other.  However, if I simultaneously increase the separation of all
+objects, the relative amount that is ``seen'' is unchanged.  This is
+analogous to the solid angle from which we can derive the view factor.
+This means we can use vector sweep at a scaled version.
+
 \subsection{Random Babbling About Stuff}
 We know the total exchange factors for a system are dependent on the
 geometric view factors \(F_{1,2}\) and the emissivity of the objects.
@@ -91,7 +169,7 @@ using the word ``nodes'' unqualified.  In the current context, I am
 referring to a ``thermal node'' concept; however, that is not very
 precise. 
 
-Because the total exchange factor \(A_i\mathcal{F}_{i,j}\) capture all
+Because the total exchange factor \(A_i\mathcal{F}_{i,j}\) captures all
 of the multiple reflections, this will give the proper black-body
 exchange.  I plotted the exchange normalized by the geometric view
 factor \(F_{1,2}\) and saw that the oblate spheroid still displayed an
@@ -132,7 +210,7 @@ scale invariance and vector sweep.
 
 I also want to find the reference Ken was using.  I'm not sure if
 Spencer was also using that reference, but I'll never know.  Spencer was
-terrible about writing things down.  I know he use \textsc{pbrt}, but
+terrible about writing things down.  I know he used \textsc{pbrt}, but
 that's all I know.  According to Wikipedia, the geometric view factor
 between differential areas is
 \begin{equation}
