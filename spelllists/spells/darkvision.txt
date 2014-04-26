@@ -1,5 +1,5 @@
 NAME: Darkvision
-DESCRIPTION:
+DESCRIPTION: See 60 ft in total darkness.
 SCHOOL: Trans.
 LEVEL: Rgr 3, Sor/Wiz 2
 COMPONENTS: V,S,M

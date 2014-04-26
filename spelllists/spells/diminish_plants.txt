@@ -1,5 +1,5 @@
 NAME: Diminish Plants
-DESCRIPTION:
+DESCRIPTION: Reduces size or blights growth of normal plants.
 SCHOOL: Trans.
 LEVEL: Drd 3, Rgr 3
 COMPONENTS: V,S,DF

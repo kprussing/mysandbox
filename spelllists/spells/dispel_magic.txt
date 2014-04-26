@@ -1,5 +1,5 @@
 NAME: Dispel Magic
-DESCRIPTION:
+DESCRIPTION: Cancels spells and magical effects.
 SCHOOL: Abj.
 LEVEL: Brd 3, Clr 3, Drd 4, Magic 3, Pal 3, Sor/Wiz 3
 COMPONENTS: V,S

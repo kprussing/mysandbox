@@ -1,5 +1,5 @@
 NAME: Death Ward
-DESCRIPTION:
+DESCRIPTION: Grant immunity to all death spells and negative energy effects.
 SCHOOL: Necr.
 LEVEL: Clr 4, Death 4, Drd 5, Pal 4
 COMPONENTS: V,S,DF

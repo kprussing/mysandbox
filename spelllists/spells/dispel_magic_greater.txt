@@ -1,5 +1,5 @@
 NAME: Dispel Magic, Greater
-DESCRIPTION:
+DESCRIPTION: As <i>dispel magic</i>, but +20 on check.
 SCHOOL: Abj.
 LEVEL: Brd 5, Clr 6, Drd 6, Sor/Wiz 6
 COMPONENTS: V,S

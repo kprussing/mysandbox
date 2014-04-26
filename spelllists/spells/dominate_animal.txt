@@ -1,5 +1,5 @@
 NAME: Dominate Animal
-DESCRIPTION:
+DESCRIPTION: Subject animal obeys silent mental commands.
 SCHOOL: Ench.
 LEVEL: Animal 3, Drd 3
 COMPONENTS: V,S

@@ -1,5 +1,5 @@
 NAME: Daylight
-DESCRIPTION:
+DESCRIPTION: 60 ft radius of bright light.
 SCHOOL: Evoc.
 LEVEL: Brd 3, Clr 3, Drd 3, Pal 3, Sor/Wiz 3
 COMPONENTS: V,S
