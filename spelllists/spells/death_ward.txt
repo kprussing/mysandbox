@@ -1,0 +1,12 @@
+NAME: Death Ward
+DESCRIPTION:
+SCHOOL: Necr.
+LEVEL: Clr 4, Death 4, Drd 5, Pal 4
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Living creature touched
+DURATION: 1 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH217

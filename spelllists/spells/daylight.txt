@@ -1,0 +1,12 @@
+NAME: Daylight
+DESCRIPTION:
+SCHOOL: Evoc.
+LEVEL: Brd 3, Clr 3, Drd 3, Pal 3, Sor/Wiz 3
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Object touched
+DURATION: 10 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH216

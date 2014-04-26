@@ -1,0 +1,12 @@
+NAME: Darkvision
+DESCRIPTION:
+SCHOOL: Trans.
+LEVEL: Rgr 3, Sor/Wiz 2
+COMPONENTS: V,S,M
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature touched
+DURATION: 1 hr/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH216

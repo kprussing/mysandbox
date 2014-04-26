@@ -1,0 +1,12 @@
+NAME: Dispel Magic
+DESCRIPTION:
+SCHOOL: Abj.
+LEVEL: Brd 3, Clr 3, Drd 4, Magic 3, Pal 3, Sor/Wiz 3
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Medoum
+AIM: One spellcaster, creature, object, or 20 ft radius burst
+DURATION: Instantaneous
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH223
