@@ -1,0 +1,12 @@
+NAME: Wood Shape
+DESCRIPTION: Rearranges wooden objects to suit you.
+SCHOOL: Trans.
+LEVEL: Drd 2
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: One touched piece of wood
+DURATION: Instantaneous
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH303

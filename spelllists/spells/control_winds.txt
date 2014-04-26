@@ -1,0 +1,12 @@
+NAME: Control Winds
+DESCRIPTION: Change wind direction and speed.
+SCHOOL: Trans.
+LEVEL: Air 5, Drd 5
+COMPONENTS: V, S
+TIME: 1 st. act.
+RANGE: 40 ft./level
+AIM: 40 ft./level radius cylinder, 40 ft. high
+DURATION: 10 min/level
+SAVE: Fort.
+SPELL_RESISTANCE: -
+PAGE: PH214

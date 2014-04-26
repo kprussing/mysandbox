@@ -1,0 +1,12 @@
+NAME: Cure Critical Wounds, Mass
+DESCRIPTION: Cures 4d8 damage +1/level for many creatures.
+SCHOOL: Conj.
+LEVEL: Clr 8, Drd 9, Healing 8
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: Close
+AIM: One creature/level
+DURATION: Instantaneous
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH215

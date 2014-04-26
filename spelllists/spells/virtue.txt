@@ -1,0 +1,12 @@
+NAME: Virtue
+DESCRIPTION: Subject gains 1 temporary hp.
+SCHOOL: Trans.
+LEVEL: Clr 0, Drd 0, Pal 1
+COMPONENTS: V,S,DF
+TIME: 1 std. act.
+RANGE: Touch
+AIM: Creature touched
+DURATION: 1 min.
+SAVE: Fort.
+SPELL_RESISTANCE: Y
+PAGE: PH298

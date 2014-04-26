@@ -1,0 +1,12 @@
+NAME: Bear's Endurance, Mass
+DESCRIPTION: As <i>bear's endurance</i>, affects one subject/level.
+SCHOOL: Trans.
+LEVEL: Clr 6, Drd 6, Sor/Wiz 6
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Close
+AIM: One creature/level
+DURATION: 1 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH203

@@ -1,0 +1,12 @@
+NAME: Resist Energy
+DESCRIPTION: Ignores 10 (or more) points of damage/attack from specified energy type.
+SCHOOL: Abj.
+LEVEL: Clr 2, Drd 2, Fire 3, Pal 2, Rgr 1, Sor/Wiz 2
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature touched
+DURATION: 10 min/level
+SAVE: Fort.
+SPELL_RESISTANCE: Y
+PAGE: PH272

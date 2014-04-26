@@ -1,0 +1,12 @@
+NAME: Spider Climb
+DESCRIPTION: Grants ability to walk on walls and ceilings.
+SCHOOL: Trans.
+LEVEL: Drd 2, Sor/Wiz 2
+COMPONENTS: V,S,M
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature touched
+DURATION: 10 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH283

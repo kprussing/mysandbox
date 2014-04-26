@@ -1,0 +1,12 @@
+NAME: Hold Animal
+DESCRIPTION: Paralyzes one animal for 1 round/level.
+SCHOOL: Ench.
+LEVEL: Animal 2, Drd 2, Rgr 2
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Medium
+AIM: One animal
+DURATION: 1 round/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH241

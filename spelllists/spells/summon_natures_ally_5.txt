@@ -1,0 +1,12 @@
+NAME: Summon Nature's Ally V
+DESCRIPTION: Calls creature to fight.
+SCHOOL: Conj.
+LEVEL: Drd 5
+COMPONENTS: V,S,DF
+TIME: 1 round
+RANGE: Close
+AIM: One or more summoned creatures
+DURATION: 1 round/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH288

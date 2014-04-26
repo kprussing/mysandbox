@@ -1,0 +1,12 @@
+NAME: Flame Blade
+DESCRIPTION: Touch attack deals 1d8 +1//two levels damage.
+SCHOOL: Evoc.
+LEVEL: Drd 2
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: 0 ft
+AIM: Swordlike beam
+DURATION: 1 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH231

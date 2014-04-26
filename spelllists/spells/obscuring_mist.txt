@@ -1,0 +1,12 @@
+NAME: Obscuring Mist
+DESCRIPTION: Fog surrounds you.
+SCHOOL: Conj.
+LEVEL: Air 1, Clr 1, Drd 1, Sor/Wiz 1 Water 1
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: 20 ft.
+AIM: Cloud spreads in 20 ft. radius from you 20 ft. high
+DURATION: 1 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH258

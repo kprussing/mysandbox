@@ -1,0 +1,12 @@
+NAME: Magic Stone
+DESCRIPTION: Three stones gain +1 on attack rolls, deal 1d6+1 damage.
+SCHOOL: Trans.
+LEVEL: Clr 1, Drd 1, Earth 1
+COMPONENTS: V,S,DF
+TIME: 1 std. act.
+RANGE: Touch
+AIM: Up to three pebbles touched
+DURATION: 30 minutes or until discharged
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH251

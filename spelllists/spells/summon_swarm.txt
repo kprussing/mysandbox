@@ -1,0 +1,12 @@
+NAME: Summon Swarm
+DESCRIPTION: Summons swarm of bats, rats, or spiders.
+SCHOOL: Conj.
+LEVEL: Brd 2, Drd 2, Sor/Wiz 2
+COMPONENTS: V,S,M/DF
+TIME: 1 round
+RANGE: Close
+AIM: One swarm of bats, rat, or spiders
+DURATION: Concentration + 2 rounds
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH289

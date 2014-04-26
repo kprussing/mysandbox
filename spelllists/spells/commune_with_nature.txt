@@ -1,0 +1,12 @@
+NAME: Commune with Nature
+DESCRIPTION: Learn about terrain for 1 mile/level
+SCHOOL: Div.
+LEVEL: Animal 5, Drd 5, Rgr 4
+COMPONENTS: V,S
+TIME: 10 min
+RANGE: You
+AIM: YOU
+DURATION: Instantaneous
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH211

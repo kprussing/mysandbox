@@ -1,0 +1,12 @@
+NAME: Faerie Fire
+DESCRIPTION: Outline subjects with light, canceling <i>blur</i>, concealment, and the like.
+SCHOOL: Evoc.
+LEVEL: Drd 1
+COMPONENTS: V,S,DF
+TIME: 1 std. act.
+RANGE: Long
+AIM: Creatures and objects within a 5-ft.-radius burst
+DURATION: 1 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH229

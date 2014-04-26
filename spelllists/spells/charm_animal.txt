@@ -1,0 +1,12 @@
+NAME: Charm Animal
+DESCRIPTION: Makes one animal you friend.
+SCHOOL: Ench.
+LEVEL: Drd 1, Rgr 1
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: Close
+AIM: One animal
+DURATION: 1 hour/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH208

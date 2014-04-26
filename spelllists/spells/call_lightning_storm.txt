@@ -1,0 +1,12 @@
+NAME: Call Lightning Storm
+DESCRIPTION: As <i>call lightning</i>, but 5d6 damage per bolt.
+SCHOOL: Evoc.
+LEVEL: Drd 5
+COMPONENTS: V,S
+TIME: 1 round
+RANGE: Long
+AIM: One or more 30-ft.-long vertical lines of lightning
+DURATION: 1 min/level
+SAVE: Ref.
+SPELL_RESISTANCE: Y
+PAGE: PH207

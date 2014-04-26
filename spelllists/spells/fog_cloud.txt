@@ -1,0 +1,12 @@
+NAME: Fog Cloud
+DESCRIPTION: Fog obscures vision.
+SCHOOL: Conj.
+LEVEL: Drd 2, Sor/Wiz 2, Water 0
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Medium
+AIM: Fog spreads in 20-ft. radius, 20-ft. high
+DURATION: 10 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH232

@@ -1,0 +1,12 @@
+NAME: Gust of Wind
+DESCRIPTION: Blows away or knocks down smaller creatures.
+SCHOOL: Evoc.
+LEVEL: Drd 2, Sor/Wis 2
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: 60 ft
+AIM: Line-shaped gust
+DURATION: 1 round
+SAVE: Fort.
+SPELL_RESISTANCE: Y
+PAGE: PH238

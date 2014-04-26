@@ -1,0 +1,12 @@
+NAME: Flaming Sphere
+DESCRIPTION: Creates rolling ball of fire, 2d6 damage, lasts 1 round/level.
+SCHOOL: Evoc.
+LEVEL: Drd 2, Sor/Wiz 2
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Medium
+AIM: 5-ft. diameter sphere
+DURATION: 1 round/level
+SAVE: Ref.
+SPELL_RESISTANCE: Y
+PAGE: PH232

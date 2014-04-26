@@ -1,0 +1,12 @@
+NAME: Baleful Polymorph
+DESCRIPTION: Transform subject into harmless animal.
+SCHOOL: Trans.
+LEVEL: Drd 5, Sor/Wiz 5
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Close
+AIM: One creature
+DURATION: Permanent
+SAVE: See text
+SPELL_RESISTANCE: Y
+PAGE: PH202

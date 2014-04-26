@@ -1,0 +1,12 @@
+NAME: Antipathy
+DESCRIPTION: Object or location affected by spell repels certain creatures.
+SCHOOL: Ench.
+LEVEL: Drd 9, Sor/Wiz 8
+COMPONENTS: V,S,M/DF
+TIME: 1 hour
+RANGE: Close
+AIM: One location (up to 10 ft cube/level) or object
+DURATION: 2 hours/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH200

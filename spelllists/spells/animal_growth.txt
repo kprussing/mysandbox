@@ -1,0 +1,12 @@
+NAME: Animal Growth
+DESCRIPTION: One animal/two levels doubles in size.
+SCHOOL: Trans.
+LEVEL: Drd 4, Rgr 4, Sor/Wiz 5
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Medium
+AIM: Up to 1 animal/level
+DURATION: 1 min/level
+SAVE: Fort.
+SPELL_RESISTANCE: Y
+PAGE: PH198

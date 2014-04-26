@@ -1,0 +1,12 @@
+NAME: Command Plants
+DESCRIPTION: Sway the actions of one or more plant creatures.
+SCHOOL: Trans.
+LEVEL: Drd 4, Plant 4, Rgr 3
+COMPONENTS: V
+TIME: 1 st. act.
+RANGE: Close
+AIM: Up to 2 HD/level of plant creatures
+DURATION: One day/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH211

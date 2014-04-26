@@ -1,0 +1,12 @@
+NAME: Call Lightning
+DESCRIPTION: Calls down lightning bolts (3d6 bolts) from sky.
+SCHOOL: Evoc.
+LEVEL: Drd 3
+COMPONENTS: V,S
+TIME: 1 round
+RANGE: Medium
+AIM: One or more 30-ft.-long vertical lines of lightning
+DURATION: 1 min/level
+SAVE: Ref.
+SPELL_RESISTANCE: Y
+PAGE: PH207

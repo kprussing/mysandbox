@@ -1,0 +1,12 @@
+NAME: Speak with Animals
+DESCRIPTION: You can communicate with animals.
+SCHOOL: Div.
+LEVEL: Brd 3, Drd 1, Rgr 1
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: Personal
+AIM: You
+DURATION: 1 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH281

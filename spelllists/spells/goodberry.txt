@@ -1,0 +1,12 @@
+NAME: Goodberry
+DESCRIPTION: 2d4 berries each cure 1 hp (max 8 hp/24 hours).
+SCHOOL: Trans.
+LEVEL: Drd 1
+COMPONENTS: V,S,DF
+TIME: 1 std. act.
+RANGE: Touch
+AIM: 2d4 fresh berries touched
+DURATION: 1 day/level
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH237

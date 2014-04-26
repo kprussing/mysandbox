@@ -1,0 +1,12 @@
+NAME: Antiplant Shell
+DESCRIPTION: Keeps animated plants at bay.
+SCHOOL: Abj.
+LEVEL: Drd 4
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: 10 ft.
+AIM: 10-ft.-emanation
+DURATION: 10 min/level
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH200

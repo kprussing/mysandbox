@@ -1,0 +1,12 @@
+NAME: Blight
+DESCRIPTION: Withers one plant or deals 1d6/level to plant creature.
+SCHOOL: Necr.
+LEVEL: Drd 4, Sor/Wiz 5
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: One plant or plant creature
+DURATION: Instantaneous
+SAVE: Fort
+SPELL_RESISTANCE: Y
+PAGE: PH206

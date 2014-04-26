@@ -1,0 +1,12 @@
+NAME: Longstrider
+DESCRIPTION: Your speed increases by 10 ft.
+SCHOOL: Trans.
+LEVEL: Drd 1, Rgr 1, Travel 1
+COMPONENTS: V,S,M
+TIME: 1 std. act.
+RANGE: Personal
+AIM: You
+DURATION: 1 hour/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH249

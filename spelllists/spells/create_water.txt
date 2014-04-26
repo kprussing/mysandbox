@@ -1,0 +1,12 @@
+NAME: Create Water
+DESCRIPTION: Create 2 gallons/level of pure water.
+SCHOOL: Conj.
+LEVEL: Clr 0, Drd 0, Pal 1
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: Close
+AIM: Up to 2 gallons of water/level
+DURATION: Instantaneous
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH215

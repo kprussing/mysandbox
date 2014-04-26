@@ -1,0 +1,12 @@
+NAME: Fire Trap
+DESCRIPTION: Opened object deals 1d4 +1/level damage.
+SCHOOL: Abj.
+LEVEL: Drd 2, Sor/Wiz 4
+COMPONENTS: V,S,M
+TIME: 10 minutes
+RANGE: Touch
+AIM: Object touched
+DURATION: Permanent until discharged
+SAVE: Ref.
+SPELL_RESISTANCE: Y
+PAGE: PH231

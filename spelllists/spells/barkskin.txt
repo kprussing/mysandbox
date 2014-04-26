@@ -1,0 +1,12 @@
+NAME: Barkskin
+DESCRIPTION: Grants +2 (or higher) enhancement to natural armor.
+SCHOOL: Trans.
+LEVEL: Drd 2, Rgr 2, Plant 2
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Living creature touched
+DURATION: 10 min/level
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH203

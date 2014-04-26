@@ -1,0 +1,12 @@
+NAME: Control Water
+DESCRIPTION: Raises or lowers bodies of water
+SCHOOL: Trans.
+LEVEL: Clr 4, Drd 4, Sor/Wiz 4, Water 4
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Long
+AIM: Water in a volume 10ft./level x 10 ft./level x 2 ft./level
+DURATION: 10 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH214

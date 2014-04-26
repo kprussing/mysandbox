@@ -1,0 +1,12 @@
+NAME: Summon Nature's Ally I
+DESCRIPTION: Calls creature to fight.
+SCHOOL: Conj.
+LEVEL: Drd 1, Rgr 1
+COMPONENTS: V,S,DF
+TIME: 1 round
+RANGE: Close
+AIM: One summoned creature
+DURATION: 1 round/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH288

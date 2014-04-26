@@ -1,0 +1,12 @@
+NAME: Cure Serious Wounds
+DESCRIPTION: Cures 3d8 damage +1/level (max +15).
+SCHOOL: Conj.
+LEVEL: Drd 4
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: Touch
+AIM: Creature touched
+DURATION: Instantaneous
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH216

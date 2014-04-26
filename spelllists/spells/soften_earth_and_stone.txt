@@ -1,0 +1,12 @@
+NAME: Soften Earth and Stone
+DESCRIPTION: Turns stone to clay or dirt to sand or mud.
+SCHOOL: Trans.
+LEVEL: Drd 2, Earth 2
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Close
+AIM: 10-ft. square/level
+DURATION: Instantaneous
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH280

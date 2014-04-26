@@ -1,0 +1,12 @@
+NAME: Animal Trance
+DESCRIPTION: Fascinates 2d6 HD of animals.
+SCHOOL: Ench.
+LEVEL: Animal 7, Drd 8
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Close
+AIM: Animals or magical beasts with Intelligence 1 or 2
+DURATION: Concentration
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH198

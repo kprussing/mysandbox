@@ -1,0 +1,12 @@
+NAME: Cure Serois Wounds, Mass
+DESCRIPTION: Cures 3d8 damage +1/level for many creatures.
+SCHOOL: Conj.
+LEVEL: Drd 8
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: Close
+AIM: One creature/level
+DURATION: Instantaneous
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH216

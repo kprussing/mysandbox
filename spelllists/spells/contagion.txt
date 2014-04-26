@@ -1,0 +1,12 @@
+NAME: Contagion
+DESCRIPTION: Infects subject with chosen disease
+SCHOOL: Necr.
+LEVEL: Clr 3, Destruction 3, Drd 3, Sor/Wiz 4
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Living creature touched
+DURATION: Instantaneous
+SAVE: Fort.
+SPELL_RESISTANCE: Y
+PAGE: PH213

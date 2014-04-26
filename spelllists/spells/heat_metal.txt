@@ -1,0 +1,12 @@
+NAME: Heat Metal
+DESCRIPTION: Make metal so hot it damages those who touch it.
+SCHOOL: Trans.
+LEVEL: Drd 2, Sun 2
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Close
+AIM: Metal equipment of one creature/two levels
+DURATION: 7 rounds
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH239

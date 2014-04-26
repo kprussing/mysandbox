@@ -1,0 +1,12 @@
+NAME: Detect Snares and Pits
+DESCRIPTION: Reveals natural or primitive traps.
+SCHOOL: Div.
+LEVEL: Drd 1, Rgr 1
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: 60 ft.
+AIM: Cone-shaped emanation
+DURATION: Conc; 10 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH220

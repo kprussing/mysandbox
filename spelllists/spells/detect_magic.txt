@@ -1,0 +1,12 @@
+NAME: Detect Magic
+DESCRIPTION: Detects spells and magic items within 60 ft.
+SCHOOL: Div.
+LEVEL: Brd 0, Clr 0, Drd 0, Sor/Wiz 0
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: 60 ft.
+AIM: Cone-shaped emanation
+DURATION: Conc; 1 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH219

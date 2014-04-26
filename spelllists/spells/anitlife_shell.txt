@@ -1,0 +1,12 @@
+NAME: Anitlive Shell
+DESCRIPTION: 10-ft.-radius field hedges out living creatures.
+SCHOOL: Abj.
+LEVEL: Animal 6, Clr 6, Drd 6
+COMPONENTS: V,S,DF
+TIME: 1 round
+RANGE: 10 ft
+AIM: 10 ft. radius emanation
+DURATION: 10 min/level
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH199

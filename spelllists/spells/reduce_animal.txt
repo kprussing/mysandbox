@@ -1,0 +1,12 @@
+NAME: Reduce Animal
+DESCRIPTION: Shrinks one willing animal.
+SCHOOL: Trans.
+LEVEL: Drd 2, Rgr 3
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Touch
+AIM: One willing animal of Small, Medium, Large, or Huge size
+DURATION: 1 hour/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH269

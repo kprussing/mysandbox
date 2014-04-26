@@ -1,0 +1,12 @@
+NAME: Entangle
+DESCRIPTION: Plants entangle everyone in 40-ft.-radius.
+SCHOOL: Trans.
+LEVEL: Drd 1, Plant 1, Rgr 1
+COMPONENTS: V,S,DF
+TIME: 1 std. act.
+RANGE: Long
+AIM: Plants in a 40 ft. radius spread
+DURATION: 1 min/level
+SAVE: Ref.
+SPELL_RESISTANCE: -
+PAGE: PH227

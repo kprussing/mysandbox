@@ -1,0 +1,12 @@
+NAME: Restoration, Lesser
+DESCRIPTION: Dispels magical ability penalty or repairs 1d4 ability damage.
+SCHOOL: Conj.
+LEVEL: Clr 2, Drd 2, Pal 1
+COMPONENTS: V,S
+TIME: 3 rounds
+RANGE: Touch
+AIM: Creature touched
+DURATION: Instantaneous
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH272

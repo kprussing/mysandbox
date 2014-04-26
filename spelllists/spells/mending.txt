@@ -1,0 +1,12 @@
+NAME: Mending
+DESCRIPTION: Makes minor repairs on an object.
+SCHOOL: Trans.
+LEVEL: Brd 0, Clr 0, Drd 0, Sor/Wiz 0
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: 10 ft.
+AIM: One object up to 1 lb.
+DURATION: Instantaneous
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH253

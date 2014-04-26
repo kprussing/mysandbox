@@ -1,0 +1,12 @@
+NAME: Animate Plants
+DESCRIPTION: One or more plants animate and fight for you.
+SCHOOL: Trans.
+LEVEL: Brd 2, Drd 2
+COMPONENTS: V
+TIME: 1 st. act.
+RANGE: Close
+AIM: One large plant/three caster levels
+DURATION: See text
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH199

@@ -1,0 +1,12 @@
+NAME: Air Walk
+DESCRIPTION: Subject treads on air  as if solid (climb at 45-degree angle).
+SCHOOL: Trans.
+LEVEL: Air 4, Clr 4, Drd 4
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature (Gargantuan or smaller) touched
+DURATION: 10 min/level
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH196

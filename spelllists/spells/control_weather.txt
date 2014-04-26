@@ -1,0 +1,12 @@
+NAME: Control Weather
+DESCRIPTION:
+SCHOOL: Trans.
+LEVEL: Air 7, Clr 7, Drd 7, Sor/Wiz 7
+COMPONENTS: V,S
+TIME: 10 min
+RANGE: 2 miles
+AIM: 2 mile radius circle
+DURATION: 2d12 hours
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH214

@@ -1,0 +1,12 @@
+NAME: Bull's Strength
+DESCRIPTION: Subject gains +4 to Str for 1 min/level.
+SCHOOL: Trans.
+LEVEL: Clr 2, Drd 2, Pal 2, Sor/Wiz 2, Strength 2
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature touched
+DURATION: 1 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH207

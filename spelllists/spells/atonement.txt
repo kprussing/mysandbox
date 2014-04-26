@@ -1,0 +1,12 @@
+NAME: Atonement
+DESCRIPTION: Removes burden of misdeeds from subject.
+SCHOOL: Abj.
+LEVEL: Clr 5, Drd 5
+COMPONENTS: See text
+TIME: 1 hour
+RANGE: Touch
+AIM: Living creature touched
+DURATION: Instantaneous
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH201

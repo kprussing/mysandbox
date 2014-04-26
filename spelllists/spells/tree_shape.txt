@@ -1,0 +1,12 @@
+NAME: Tree Shape
+DESCRIPTION: You look exactly like a tree for 1 hour/level
+SCHOOL: Trans.
+LEVEL: Drd 2, Rgr 3
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Personal
+AIM: You
+DURATION: 1 hour/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH296

@@ -1,0 +1,12 @@
+NAME: Flare
+DESCRIPTION: Dazzles on creature (-1 penalty on attack rolls).
+SCHOOL: Evoc.
+LEVEL: Brd 0, Drd 0, Sor/Wiz 0
+COMPONENTS: V
+TIME: 1 std. act.
+RANGE: Close
+AIM: Burst of light
+DURATION: Instantaneous.
+SAVE: Fort.
+SPELL_RESISTANCE: Y
+PAGE: PH232

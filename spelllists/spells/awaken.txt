@@ -1,0 +1,12 @@
+NAME: Awaken
+DESCRIPTION: Animal or tree gains human intellect.
+SCHOOL: Trans.
+LEVEL: Drd 5
+COMPONENTS: See text
+TIME: 24 hours
+RANGE: Touch
+AIM: Animal or tree touched
+DURATION: Instantaneous
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH202

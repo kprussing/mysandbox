@@ -1,0 +1,12 @@
+NAME: Cat's Grace, Mass
+DESCRIPTION: As <i>cat's grace</i>, gains +4 to Dex for 1 min/level.
+SCHOOL: Trans.
+LEVEL: Brd 6, Drd 6, Sor/Wiz 6
+COMPONENTS: V,S,M
+TIME: 1 st. act.
+RANGE: Close
+AIM: One creature /level
+DURATION: 1 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH208

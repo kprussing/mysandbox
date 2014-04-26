@@ -1,0 +1,12 @@
+NAME: Calm Animals
+DESCRIPTION: Calms (2d4 + level) HD of animals.
+SCHOOL: Ench.
+LEVEL: Animal 1, Drd 1, Rgr 1
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: Close
+AIM: Animals within 30 ft. of each other
+DURATION: 1 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH207

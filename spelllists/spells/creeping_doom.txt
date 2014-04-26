@@ -1,0 +1,12 @@
+NAME: Creeping Doom
+DESCRIPTION: Swarms of centipedes attack at you command.
+SCHOOL: Conj.
+LEVEL: Drd 7
+COMPONENTS: V,S
+TIME: 1 round
+RANGE: Close
+AIM: One swarm of centipedes/two levels
+DURATION: 1 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH215

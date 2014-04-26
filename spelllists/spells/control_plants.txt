@@ -1,0 +1,12 @@
+NAME: Control Plants
+DESCRIPTION: Control actions of one or more plant creatures.
+SCHOOL: Trans.
+LEVEL: Drd 8, Plant 8
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Close
+AIM: Up to 2 HD/level of plant creatures
+DURATION: 1 min/level
+SAVE: Will
+SPELL_RESISTANCE: -
+PAGE: PH213

@@ -1,0 +1,12 @@
+NAME: Alarm
+DESCRIPTION: Wards an area for 2 hours/level.
+SCHOOL: Abj.
+LEVEL: Brd 1, Rgr 1, Sor/Wiz 1
+COMPONENTS: V,S,F/DF
+TIME: 1 st. act.
+RANGE: Close
+AIM: 20 ft. radius emanation centered on a point in space
+DURATION: 2 hr/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH197

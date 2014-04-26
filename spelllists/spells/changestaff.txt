@@ -1,0 +1,12 @@
+NAME: Changestaff
+DESCRIPTION: Your staff becomes a treant on command.
+SCHOOL: Trans.
+LEVEL: Drd 7
+COMPONENTS: V,S,F
+TIME: 1 round
+RANGE: Touch
+AIM: Your touched staff
+DURATION: 1 hour/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH208

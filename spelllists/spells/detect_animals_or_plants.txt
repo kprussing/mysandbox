@@ -1,0 +1,12 @@
+NAME: Detect Animals or Plants
+DESCRIPTION: Detects kinds of animals or plants.
+SCHOOL: Div.
+LEVEL: Drd 1, Rgr 1
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: Long
+AIM: Cone-shaped emanation.
+DURATION: Conc; 10 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH218

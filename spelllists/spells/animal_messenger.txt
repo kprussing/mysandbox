@@ -1,0 +1,12 @@
+NAME: Animal Messenger
+DESCRIPTION: Sends a Tiny animal to a specific place.
+SCHOOL: Ench.
+LEVEL: Brd 2, Drd 2, Rgr 1
+COMPONENTS: V,S,M
+TIME: 1 st. act.
+RANGE: Close
+AIM: One Tiny animal
+DURATION: One day/level
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH198

@@ -1,0 +1,12 @@
+NAME: Produce Flame
+DESCRIPTION: 1d6 damage +1/level, touch or thrown.
+SCHOOL: Evoc.
+LEVEL: Drd 1, Fire 2
+COMPONENTS: V,S
+TIME: 1 std. act.
+RANGE: 0 ft.
+AIM: Flame in your palm
+DURATION: 1 min/level
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH265
