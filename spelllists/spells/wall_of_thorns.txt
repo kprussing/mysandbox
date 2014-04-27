@@ -1,0 +1,12 @@
+NAME: Wall of Thorns
+DESCRIPTION: Thorns damage anyone who tries to pass.
+SCHOOL: Conj.
+LEVEL: Drd 5, Plant 5
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Medium
+AIM: Wall of thorny brush up to on 10 ft cube/level
+DURATION: 10 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH300

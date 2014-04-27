@@ -1,0 +1,12 @@
+NAME: Wind Walk
+DESCRIPTION: You and your allies turn vaporous and travel fast.
+SCHOOL: Trans.
+LEVEL: Clr 6, Drd 7
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: You and one touched creature/ three levels
+DURATION: 1 hour/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH302

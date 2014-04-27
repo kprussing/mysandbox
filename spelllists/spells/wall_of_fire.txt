@@ -1,0 +1,12 @@
+NAME: Wall of Fire
+DESCRIPTION: Deals 2d4 fire damage out to 10 ft and 1d4 out to 20 ft.  Passing through the wall deals 2d6 damage +1/level.
+SCHOOL: Evoc.
+LEVEL: Drd 5, Fire 4, Sor/Wiz 4
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Medium
+AIM: Opaque sheet of flame 20 ft long/level
+DURATION: Conc +1 round/level
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH298

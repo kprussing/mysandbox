@@ -1,0 +1,12 @@
+NAME: Whirlwind
+DESCRIPTION: Cyclone deals damage and can pick up creatures.
+SCHOOL: Evoc.
+LEVEL: Air 8, Drd 8
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Long
+AIM: Cyclone 10 ft wide at base, 30 ft wide at top, 30 ft high
+DURATION: 1 round/level
+SAVE: Ref.
+SPELL_RESISTANCE: Y
+PAGE: PH301

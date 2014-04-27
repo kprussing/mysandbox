@@ -1,0 +1,12 @@
+NAME: Transmute Metal to Wood
+DESCRIPTION: metal within 40 ft becomes wood.
+SCHOOL: Trans.
+LEVEL: Drd 7
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Long
+AIM: All metal objects within 40 ft radius burst
+DURATION: Instantaneous
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH294

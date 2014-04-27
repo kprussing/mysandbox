@@ -1,0 +1,12 @@
+NAME: True Seeing
+DESCRIPTION: Lets you see all things as they really are.
+SCHOOL: Div.
+LEVEL: Clr 5, Drd 7, Knowledge 5, Sor/Wiz 6
+COMPONENTS: V,S,M
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature touched
+DURATION: 1 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH296

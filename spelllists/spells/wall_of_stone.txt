@@ -1,0 +1,12 @@
+NAME: Wall of Stone
+DESCRIPTION: Creates a stone wall that can be shaped.
+SCHOOL: Conj.
+LEVEL: Clr 5, Drd 6, Earth 5, Sor/Wiz 5
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Medium
+AIM: Stone wall whose area is up to one 5 ft square/level
+DURATION: Instantaneous
+SAVE: See text
+SPELL_RESISTANCE: -
+PAGE: PH299

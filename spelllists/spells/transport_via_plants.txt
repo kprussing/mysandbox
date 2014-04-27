@@ -1,0 +1,12 @@
+NAME: Transport via Plants
+DESCRIPTION: Move instantly from one plant to another of the same kind.
+SCHOOL: Conj.
+LEVEL: Drd 6
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Unlimited
+AIM: You and touched objects and willing creatures
+DURATION: 1 round
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH295

@@ -1,0 +1,12 @@
+NAME: Wind Wall
+DESCRIPTION: Deflects arrows, smaller creatures, and gases.
+SCHOOL: Evoc.
+LEVEL: Air 2, Clr 3, Drd 3, Rgr 2, Sor/Wiz 3
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Medium
+AIM: Wall up to 10 ft/level long and 5 ft/level high
+DURATION: 1 round/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH302

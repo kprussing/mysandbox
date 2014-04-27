@@ -1,0 +1,12 @@
+NAME: Water Walk
+DESCRIPTION: Subject treads on water as if solid.
+SCHOOL: Trans.
+LEVEL: Clr 3, Rgr 3
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: One touched creature/level
+DURATION: 10 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH300

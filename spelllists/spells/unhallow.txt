@@ -1,0 +1,12 @@
+NAME: Unhallow
+DESCRIPTION: Designate location as unholy.
+SCHOOL: Evoc.
+LEVEL: Clr 5, Drd 5
+COMPONENTS: V,S,M
+TIME: 24 hours
+RANGE: Touch
+AIM: 40 ft radius emanation.
+DURATION: Instantaneous
+SAVE: See text
+SPELL_RESISTANCE: See text
+PAGE: PH297

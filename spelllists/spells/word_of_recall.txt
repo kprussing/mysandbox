@@ -1,0 +1,12 @@
+NAME: Word of Recall
+DESCRIPTION: Teleports you back to designated place.
+SCHOOL: Conj.
+LEVEL: Clr 6, Drd 8
+COMPONENTS: V
+TIME: 1 st. act.
+RANGE: Unlimited
+AIM: You and touched objects and other willing creatures
+DURATION: Instantaneous
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH303

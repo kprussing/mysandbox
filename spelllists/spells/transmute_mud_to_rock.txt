@@ -1,0 +1,12 @@
+NAME: Transmute Mud to Rock
+DESCRIPTION: Transforms two 10 ft cubes/level.
+SCHOOL: Trans.
+LEVEL: Drd 5, Sor/Wiz 5
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Medium
+AIM: Up to two 10 ft cubes/level
+DURATION: Permanent
+SAVE: See text
+SPELL_RESISTANCE: -
+PAGE: PH295
