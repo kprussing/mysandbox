@@ -1,0 +1,12 @@
+NAME: Foresight
+DESCRIPTION: "Sixth sense" warns of impending danger.
+SCHOOL: Div.
+LEVEL: Drd 9, Knowledge 9, Sor/Wiz 9
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: See text
+DURATION: 10 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH233

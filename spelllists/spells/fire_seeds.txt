@@ -1,0 +1,12 @@
+NAME: Fire Seeds
+DESCRIPTION: Acorns and berries become grenades and bombs.
+SCHOOL: Conj.
+LEVEL: Drd 6, Fire 6, Sun 6
+COMPONENTS: V,S,M
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Up to touched acorns or eight touched holly berries
+DURATION: 10 min/level
+SAVE: Ref.
+SPELL_RESISTANCE: -
+PAGE: PH230

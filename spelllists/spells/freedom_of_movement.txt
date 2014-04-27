@@ -1,0 +1,12 @@
+NAME: Freedom of Movement
+DESCRIPTION: Subject moves normally despite impediments.
+SCHOOL: Abj.
+LEVEL: Brd 4, Clr 4, Drd 4, Luck 4, Rgr 4
+COMPONENTS: V,S,M,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: You or creature touched
+DURATION: 10 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH233

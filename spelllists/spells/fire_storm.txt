@@ -1,0 +1,12 @@
+NAME: Fire Storm
+DESCRIPTION: Deals 1d6/level fire damage.
+SCHOOL: Evoc.
+LEVEL: Clr 8, Drd 7, Fire 7
+COMPONENTS: V,S
+TIME: 1 round
+RANGE: Medium
+AIM: Two 10 ft cubes/level
+DURATION: Instantaneous
+SAVE: Ref.
+SPELL_RESISTANCE: Y
+PAGE: PH231

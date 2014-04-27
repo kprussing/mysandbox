@@ -1,0 +1,12 @@
+NAME: Flame Strike
+DESCRIPTION: Smite foes with divine fire (1d6/level damage).
+SCHOOL: Evoc.
+LEVEL: Clr 5, Drd 4, Sun 5, War 5
+COMPONENTS: V,S,DF
+TIME: 1 st. act
+RANGE: Medium
+AIM: Cylinder (10 ft radius, 40 ft high)
+DURATION: Instantaneous
+SAVE: Ref.
+SPELL_RESISTANCE: Y
+PAGE: PH231

@@ -1,0 +1,12 @@
+NAME: Find the Path
+DESCRIPTION: Shows most direct way to a location.
+SCHOOL: Div.
+LEVEL: Brd 6, Clr 6, Drd 6, Knowledge 6, Travel 6
+COMPONENTS: V,S,F
+TIME: 3 rounds
+RANGE: Touch
+AIM: You or creature touched
+DURATION: 10 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH230

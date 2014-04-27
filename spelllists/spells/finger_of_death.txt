@@ -1,0 +1,12 @@
+NAME: Finger of Death
+DESCRIPTION: Kills one subject.
+SCHOOL: Necr.
+LEVEL: Drd 8, Sor/Wiz 7
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Close
+AIM: One living creature
+DURATION: Instantaneous
+SAVE: Fort.
+SPELL_RESISTANCE: Y
+PAGE: PH230
