@@ -1,0 +1,12 @@
+NAME: Ice Storm
+DESCRIPTION: Hail deals 5d6 damage in cylinder 40 ft across.
+SCHOOL: Evoc.
+LEVEL: Drd 4, Sor/Wiz 4, Water 5
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Long
+AIM: Cylinder (20 ft radius, 40 ft high)
+DURATION: 1 round
+SAVE: None
+SPELL_RESISTANCE: Y
+PAGE: PH243

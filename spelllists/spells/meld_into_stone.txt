@@ -1,0 +1,12 @@
+NAME: Meld into Stone
+DESCRIPTION: You and your gear merge with stone.
+SCHOOL: Trans.
+LEVEL: Clr 3, Drd 3
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Personal
+AIM: You
+DURATION: 10 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH252

@@ -1,0 +1,12 @@
+NAME: Magic Fang, Greater
+DESCRIPTION: As <i>magic fang</i>, but +1/four caster levels (max +5).
+SCHOOL: Trans.
+LEVEL: Drd 3, Rgr 3
+COMPONENTS: V,S,F
+TIME: 1 st. act.
+RANGE: Medium
+AIM: One living creature
+DURATION: 1 hour/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH250

@@ -1,0 +1,12 @@
+NAME: Insect Plague
+DESCRIPTION: Locust swarms attack creatures.
+SCHOOL: Conj.
+LEVEL: Clr 5, Drd 5
+COMPONENTS: V,S,DF
+TIME: 1 round
+RANGE: Long
+AIM: One swam of locusts/three levels
+DURATION: 1 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH244

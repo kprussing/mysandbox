@@ -1,0 +1,12 @@
+NAME: Ironwood
+DESCRIPTION: Magic wood is strong as steel.
+SCHOOL: Trans.
+LEVEL: Drd 6
+COMPONENTS: V,S,M
+TIME: 1 min/lb created
+RANGE: 0 ft
+AIM: An <i>ironwood</i> object up to 5 lb/level
+DURATION: One day/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH246

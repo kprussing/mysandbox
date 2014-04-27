@@ -1,0 +1,12 @@
+NAME: Heal
+DESCRIPTION: Cures 10 points/level of damage, all diseases, and mental conditions.
+SCHOOL: Conj.
+LEVEL: Clr 6, Drd 7, Healing 6
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature touched
+DURATION: Instantaneous
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH239

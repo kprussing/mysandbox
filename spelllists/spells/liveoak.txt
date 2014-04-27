@@ -1,0 +1,12 @@
+NAME: Liveoak
+DESCRIPTION: Oak becomes treant guardian.
+SCHOOL: Trans.
+LEVEL: Drd 6
+COMPONENTS: V,S
+TIME: 10 minutes
+RANGE: Touch
+AIM: Tree touched
+DURATION: One day/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH248

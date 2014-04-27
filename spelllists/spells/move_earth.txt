@@ -1,0 +1,12 @@
+NAME: Move Earth
+DESCRIPTION: Digs trenches and builds hills.
+SCHOOL: Trans.
+LEVEL: Drd 6, Sor/Wiz 6
+COMPONENTS: V,S,M
+TIME: See text
+RANGE: Long
+AIM: Dirt in area up to 750 ft square and 10 ft deep
+DURATION: Instantaneous
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH257
