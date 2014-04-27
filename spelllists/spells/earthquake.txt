@@ -1,0 +1,12 @@
+NAME: Earthquake
+DESCRIPTION: Intense tremors shake 5 ft/level radius.
+SCHOOL: Evoc.
+LEVEL: Clr 8, Destruction 8, Drd 8, Earth 8
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Long
+AIM: 80 ft radius spread
+DURATION: 1 round
+SAVE: See text
+SPELL_RESISTANCE: -
+PAGE: PH225

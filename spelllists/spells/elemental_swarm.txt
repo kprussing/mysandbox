@@ -1,0 +1,12 @@
+NAME: Elemental Swarm
+DESCRIPTION: Summons multiple elementals
+SCHOOL: Conj.
+LEVEL: Air 9, Drd 9, Earth 9, Fire 9, Water 9
+COMPONENTS: V,S
+TIME: 10 min
+RANGE: Medium
+AIM: Two or more summoned creatures
+DURATION: 10 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH226
