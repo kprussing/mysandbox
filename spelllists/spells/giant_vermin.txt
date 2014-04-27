@@ -1,0 +1,12 @@
+NAME: Giant Vermin
+DESCRIPTION: Turns centipedes, scorpions, or spiders into giant vermin.
+SCHOOL: Trans.
+LEVEL: Clr 4, Drd 4
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Close
+AIM: Up to three vermin
+DURATION: 1 min/level
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH235
