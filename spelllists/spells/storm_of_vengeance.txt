@@ -1,0 +1,12 @@
+NAME: Storm of Vengeance
+DESCRIPTION: Storm rains acid, lightning, and hail.
+SCHOOL: Conj.
+LEVEL: Drd 9, Clr 9
+COMPONENTS: V,S
+TIME: 1 round
+RANGE: Long
+AIM: 360 ft radius storm cloud
+DURATION: Conc; 10 rounds
+SAVE: See text
+SPELL_RESISTANCE: Y
+PAGE: PH285

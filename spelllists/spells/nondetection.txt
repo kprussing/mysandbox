@@ -1,0 +1,12 @@
+NAME: Nondetection
+DESCRIPTION: Hides subject from divination, scrying.
+SCHOOL: Abj.
+LEVEL: Rgr 4, Sor/Wiz 3, Trickery 3
+COMPONENTS: V,S,M
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature or object touched
+DURATION: 1 hour/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH257

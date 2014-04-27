@@ -1,0 +1,12 @@
+NAME: Sleet Storm
+DESCRIPTION: Hampers vision and movement.
+SCHOOL: Conj.
+LEVEL: Drd 3, Sor/Wiz 3
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Long
+AIM: Cylinder (40 ft radius, 20 ft high)
+DURATION: 1 round/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH280

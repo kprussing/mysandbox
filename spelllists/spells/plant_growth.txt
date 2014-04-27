@@ -1,0 +1,12 @@
+NAME: Plant Growth
+DESCRIPTION: Grows vegetation, improves crops.
+SCHOOL: Trans.
+LEVEL: Drd 3, Plant 3, Rgr 3
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: See text
+AIM: See text
+DURATION: Instantaneous
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH262

@@ -1,0 +1,12 @@
+NAME: Sunburst
+DESCRIPTION: Blinds all within 80 ft, deals 6d6 damage.
+SCHOOL: Evoc.
+LEVEL: Drd 8, Sor/Wiz 8, Sun 8
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Long
+AIM: 80 ft radius burst
+DURATION: Instantaneous
+SAVE: Ref.
+SPELL_RESISTANCE: Y
+PAGE: PH289

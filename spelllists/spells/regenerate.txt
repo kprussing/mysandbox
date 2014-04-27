@@ -1,0 +1,12 @@
+NAME: Regenerate
+DESCRIPTION: Subject's severed limbs grow back, cures 4d8 damage +1/level (max +35).
+SCHOOL: Conj.
+LEVEL: Clr 7, Drd 9, Healing 7
+COMPONENTS: V,S,DF
+TIME: 3 rounds
+RANGE: Touch
+AIM: Living creature touched
+DURATION: Instantaneous
+SAVE: Fort.
+SPELL_RESISTANCE: Y
+PAGE: PH270

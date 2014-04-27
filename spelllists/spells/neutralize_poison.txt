@@ -1,0 +1,12 @@
+NAME: Neutralize Poison
+DESCRIPTION: Immunizes subject against poison, detoxifies venom in or on object.
+SCHOOL: Conj.
+LEVEL: Brd 4, Clr 4, Drd 3, Pal 4, Rgr 3
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature touched or object of 1 cu. ft /level
+DURATION: 10 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH257

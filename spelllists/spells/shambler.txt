@@ -1,0 +1,12 @@
+NAME: Shambler
+DESCRIPTION: Summons 1d4+2 shambling mounds to fight for you.
+SCHOOL: Conj.
+LEVEL: Drd 9, Plant 9
+COMPONENTS: V,S,
+TIME: 1 st. act.
+RANGE: Medium
+AIM: Three or more shambling mounds
+DURATION: Seven days or seven months; see text
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH277

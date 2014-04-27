@@ -1,0 +1,12 @@
+NAME: Rusting Grasp
+DESCRIPTION: Your touch corrodes iron and alloys.
+SCHOOL: Trans.
+LEVEL: Drd 4
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: One nonmagical ferrous object or creature
+DURATION: See text
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH273

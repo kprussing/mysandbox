@@ -1,0 +1,12 @@
+NAME: Scrying
+DESCRIPTION: Spies on subject from a distance.
+SCHOOL: Div.
+LEVEL: Brd 3, Clr 5, Drd 4, Sor/Wiz 4
+COMPONENTS: V,S,M/DF,F
+TIME: 1 hour
+RANGE: See text
+AIM: Magical sensor
+DURATION: 1 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH274

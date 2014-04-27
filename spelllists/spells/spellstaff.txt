@@ -1,0 +1,12 @@
+NAME: Spellstaff
+DESCRIPTION: Stores one spell in wooden quarterstaff.
+SCHOOL: Trans.
+LEVEL: Drd 6
+COMPONENTS: V,S,F
+TIME: 10 minutes
+RANGE: Touch
+AIM: Wooden quarterstaff touched
+DURATION: Permanent until discharged
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH282

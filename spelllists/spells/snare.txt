@@ -1,0 +1,12 @@
+NAME: Snare
+DESCRIPTION: Creates magical booby trap.
+SCHOOL: Trans.
+LEVEL: Rgr 2, Drd 3
+COMPONENTS: V,S,DF
+TIME: 3 rounds
+RANGE: Touch
+AIM: Touched nonmagical circle of of vine, rope, or thong with 2 ft diameter +2 ft/level
+DURATION: Until triggered of broken
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH280

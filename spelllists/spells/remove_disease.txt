@@ -1,0 +1,12 @@
+NAME: Remove Disease
+DESCRIPTION: Cures all diseases affecting subject.
+SCHOOL: Conj.
+LEVEL: Clr 3, Drd 3, Rgr 3
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature touched
+DURATION: Instantaneous
+SAVE: Fort.
+SPELL_RESISTANCE: Y
+PAGE: PH271

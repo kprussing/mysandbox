@@ -1,0 +1,12 @@
+NAME: Repel Metal or Stone
+DESCRIPTION: Pushes away metal and stone.
+SCHOOL: Abj.
+LEVEL: Drd 8
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: 60 ft
+AIM: 60 ft line from you
+DURATION: 1 round/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH271

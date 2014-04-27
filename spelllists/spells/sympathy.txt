@@ -1,0 +1,12 @@
+NAME: Sympathy
+DESCRIPTION: Object or location attracts certain creatures.
+SCHOOL: Ench.
+LEVEL: Drd 9, Sor/Wiz 9
+COMPONENTS: V,S,M
+TIME: 1 hour
+RANGE: Close
+AIM: One location (up to 10 ft cube/level) or object
+DURATION: 2 hours/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH292

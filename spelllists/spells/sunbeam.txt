@@ -1,0 +1,12 @@
+NAME: Sunbeam
+DESCRIPTION: Beam blinds and deal 4d6 damage.
+SCHOOL: Evoc.
+LEVEL: Drd 7, Sun 7
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: 60 ft
+AIM: Line from you hand
+DURATION: 1 round/level or until all used
+SAVE: Ref.
+SPELL_RESISTANCE: Y
+PAGE: PH289

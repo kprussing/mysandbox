@@ -1,0 +1,12 @@
+NAME: Repel Wood
+DESCRIPTION: Pushes away wooden objects.
+SCHOOL: Trans.
+LEVEL: Drd 6, Plant 6
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: 60 ft
+AIM: 60 ft line shaped emanation from you
+DURATION: 1 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH271

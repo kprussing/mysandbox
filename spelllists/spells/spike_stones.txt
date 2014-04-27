@@ -1,0 +1,12 @@
+NAME: Spike Stones
+DESCRIPTION: Creatures in area take 1d8 damage, may be <i>slowed</i>.
+SCHOOL: Trans.
+LEVEL: Drd 4, Earth 4
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Medium
+AIM: One 20 ft square/level
+DURATION: 1 hour/level
+SAVE: Ref.
+SPELL_RESISTANCE: Y
+PAGE: PH283

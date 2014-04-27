@@ -1,0 +1,12 @@
+NAME: Stoneskin
+DESCRIPTION: Ignore 10 points of damage per attack.
+SCHOOL: Abj.
+LEVEL: Drd 5, Earth 6, Sor/Wiz 4
+COMPONENTS: V,S,M
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature touched
+DURATION: 10 min/level or until discharged
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH284

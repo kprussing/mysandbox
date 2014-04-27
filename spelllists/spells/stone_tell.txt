@@ -1,0 +1,12 @@
+NAME: Stone Tell
+DESCRIPTION: Talk to natural or worked stone.
+SCHOOL: Div.
+LEVEL: Drd 6
+COMPONENTS: V,S,DF
+TIME: 10 minutes
+RANGE: Personal
+AIM: You
+DURATION: 1 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH284

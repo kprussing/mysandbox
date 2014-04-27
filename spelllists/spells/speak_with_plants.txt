@@ -1,0 +1,12 @@
+NAME: Speak with Plants
+DESCRIPTION: You can talk to normal plants and plant creatures.
+SCHOOL: Div.
+LEVEL: Brd 4, Drd 3, Rgr 2
+COMPONENTS: V,S
+TIME: 1 st. act.
+RANGE: Personal
+AIM: You
+DURATION: 1 min/level
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH282

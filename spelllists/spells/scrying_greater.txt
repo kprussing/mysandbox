@@ -1,0 +1,12 @@
+NAME: Scrying, Greater
+DESCRIPTION: As <i>scrying</i>, but faster and longer.
+SCHOOL: Div.
+LEVEL: Brd 6, Clr 7, Drd 7, Sor/Wiz 7
+COMPONENTS: V,S,M/DF,F
+TIME: 1 st. act.
+RANGE: See text
+AIM: Magical sensor
+DURATION: 1 hour/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH275

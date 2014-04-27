@@ -1,0 +1,12 @@
+NAME: Poison
+DESCRIPTION: Touch deals 1d10 Con damage, repeats in 1 min.
+SCHOOL: Necr.
+LEVEL: Clr 4, Drd 3
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Living creature touched
+DURATION: Instantaneous
+SAVE: Fort.
+SPELL_RESISTANCE: Y
+PAGE: PH262

@@ -1,0 +1,12 @@
+NAME: Repel Vermin
+DESCRIPTION: Insect, spider, and other vermin stay 10 ft away.
+SCHOOL: Abj.
+LEVEL: Brd 4, Clr 4, Drd 4, Rgr 3
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: 10 ft
+AIM: 10 ft radius emanation centered on you
+DURATION: 10 min/level
+SAVE: Will
+SPELL_RESISTANCE: Y
+PAGE: PH271

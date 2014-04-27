@@ -1,0 +1,12 @@
+NAME: Reincarnate
+DESCRIPTION: Brings dead subject back in a random body.
+SCHOOL: Trans.
+LEVEL: Drd 4
+COMPONENTS: V,S,M,DF
+TIME: 10 minutes
+RANGE: Touch
+AIM: Dead creature touched
+DURATION: Instantaneous
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH270

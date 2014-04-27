@@ -1,0 +1,12 @@
+NAME: Protection from Energy
+DESCRIPTION: Absorb 12 points/level of damage from one kind of energy.
+SCHOOL: Abj.
+LEVEL: Clr 3, Drd 3, Luck 3, Protection 3, Rgr 2, Sor/Wiz 3
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Touch
+AIM: Creature touched
+DURATION: 10 min/level or until discharged
+SAVE: Fort.
+SPELL_RESISTANCE: Y
+PAGE: PH266
