@@ -1,7 +1,7 @@
-NAME: Cure Serois Wounds, Mass
+NAME: Cure Serious Wounds, Mass
 DESCRIPTION: Cures 3d8 damage +1/level for many creatures.
 SCHOOL: Conj.
-LEVEL: Drd 8
+LEVEL: Clr 7, Drd 8
 COMPONENTS: V,S
 TIME: 1 std. act.
 RANGE: Close

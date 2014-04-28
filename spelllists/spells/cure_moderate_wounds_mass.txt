@@ -1,7 +1,7 @@
 NAME: Cure Moderate Wounds, Mass
 DESCRIPTION: Cures 2d8 damage +1/level for many creatures.
 SCHOOL: Conj.
-LEVEL: Drd 7
+LEVEL: Brd 6, Clr 6, Drd 7
 COMPONENTS: V,S
 TIME: 1 std. act.
 RANGE: Close

@@ -1,7 +1,7 @@
 NAME: Cure Serious Wounds
 DESCRIPTION: Cures 3d8 damage +1/level (max +15).
 SCHOOL: Conj.
-LEVEL: Drd 4
+LEVEL: Brd 3, Clr 3, Drd 4, Healing 3, Pal 4, Rgr 4
 COMPONENTS: V,S
 TIME: 1 std. act.
 RANGE: Touch

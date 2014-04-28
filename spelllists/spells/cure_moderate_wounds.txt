@@ -1,7 +1,7 @@
 NAME: Cure Moderate Wounds
 DESCRIPTION: Cures 2d8 damage +1/level (max +10).
 SCHOOL: Conj.
-LEVEL: Brd 1, Clr 1, Drd 3, Healing 1, Pal 1, Rgr 1
+LEVEL: Brd 2, Clr 2, Drd 3, Healing 2, Pal 3, Rgr 3
 COMPONENTS: V,S
 TIME: 1 std. act.
 RANGE: Touch

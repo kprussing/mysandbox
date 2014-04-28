@@ -1,7 +1,7 @@
 NAME: Cure Light Wounds
 DESCRIPTION: Cures 1d8 damage +1/level (max +5).
 SCHOOL: Conj.
-LEVEL: Brd 1, Clr 1, Drd 1, Healing 1, Pal 1, Rgr 1
+LEVEL: Brd 1, Clr 1, Drd 1, Healing 1, Pal 1, Rgr 2
 COMPONENTS: V,S
 TIME: 1 std. act.
 RANGE: Touch

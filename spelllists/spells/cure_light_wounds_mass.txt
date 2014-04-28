@@ -1,7 +1,7 @@
 NAME: Cure Light Wounds, Mass
 DESCRIPTION: Cures 1d8 damage +1/level for many creatures.
 SCHOOL: Conj.
-LEVEL: Drd 6
+LEVEL: Brd 5, Clr 5, Drd 6, Healing 5
 COMPONENTS: V,S
 TIME: 1 std. act.
 RANGE: Close
