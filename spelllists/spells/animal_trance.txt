@@ -1,7 +1,7 @@
 NAME: Animal Trance
 DESCRIPTION: Fascinates 2d6 HD of animals.
 SCHOOL: Ench.
-LEVEL: Animal 7, Drd 8
+LEVEL: Brd 2, Drd 2
 COMPONENTS: V,S
 TIME: 1 st. act.
 RANGE: Close

@@ -1,0 +1,12 @@
+NAME: Stone Shape
+DESCRIPTION: Sculpts stone into any shape.
+SCHOOL: Trans.
+LEVEL: Clr 3, Drd 3, Earth 3, Sor/Wiz 4
+COMPONENTS: V,S,M/DF
+TIME: 1 st. act. 
+RANGE: Touch
+AIM: Stone or stone object touched up to 10 cu. ft +1 cu ft/level
+DURATION: Instantaneous
+SAVE: -
+SPELL_RESISTANCE: -
+PAGE: PH284

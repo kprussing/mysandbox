@@ -1,7 +1,7 @@
 NAME: Animal Growth
 DESCRIPTION: One animal/two levels doubles in size.
 SCHOOL: Trans.
-LEVEL: Drd 4, Rgr 4, Sor/Wiz 5
+LEVEL: Drd 5, Rgr 4, Sor/Wiz 5
 COMPONENTS: V,S
 TIME: 1 st. act.
 RANGE: Medium

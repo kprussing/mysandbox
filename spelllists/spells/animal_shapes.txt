@@ -1,0 +1,12 @@
+NAME: Animal Shapes
+DESCRIPTION: One ally/level polymorphs into chosen animal.
+SCHOOL: Trans.
+LEVEL: Animal 7, Drd 8
+COMPONENTS: V,S,DF
+TIME: 1 st. act.
+RANGE: Close
+AIM: Up to one willing creature per level
+DURATION: 1 hour/level
+SAVE: -
+SPELL_RESISTANCE: Y
+PAGE: PH198

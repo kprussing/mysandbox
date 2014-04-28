@@ -1,7 +1,7 @@
 NAME: Reverse Gravity
 DESCRIPTION: Objects and creatures fall upward.
 SCHOOL: Trans.
-LEVEL: Drd 9, Sor/Wiz 7
+LEVEL: Drd 8, Sor/Wiz 7
 COMPONENTS: V,S,M/DF
 TIME: 1 st. act.
 RANGE: Medium
